@@ -1,0 +1,134 @@
+	*{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		font-family: "微軟正黑體";
+		/*outline: 1px solid #f00;*/
+	}
+
+	.nav{
+		height: 70px;
+	}
+
+	.nav-bg{
+		height: 70px;
+		background-image:url(images/nav-bg.png); 
+	}
+
+/*================= 會員右上狀態=====================*/
+	.member-zone{
+		text-align: center;
+		font-size: 0;
+		float: right;
+		position: relative;
+		z-index:10; 
+	}
+
+	.member{
+		display: inline-block;
+		vertical-align: top;
+		padding:0  8px;
+	}
+
+	.member img{
+		height: 22px;
+		width: 22px;
+		opacity: .6;
+	}
+
+	.member a{
+		font-size: 0.8rem;
+		text-decoration: none;
+		color:#666;
+	}
+
+	.member a,.member img{
+		display: inline-block;
+		vertical-align:middle;
+	}
+
+	#mem{
+		margin-right:5px; 
+	}
+
+	/*＝＝＝＝＝＝＝＝＝＝＝＝選單那一列和logo一起＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+	.nav-bottom{
+		text-align: center;
+		font-size: 0;
+		position: relative;
+		top:-65px;
+		box-sizing: border-box;
+		/*background-color: #fa0;*/
+	}
+
+	.logo{
+		height: 60px;
+		width: 60px;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 40px;
+		
+	}
+
+	img{
+		width: 100%;
+		height:auto;
+	}
+
+	.meun{
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 0;
+		text-align: center;
+		padding-right:450px; 
+	}
+
+	.meun-all li {
+		display: inline-block;
+		vertical-align: middle;
+		/*padding: 10px 0;*/
+		
+	}
+	
+	
+
+	.meun-all li a{
+		text-decoration: none;
+		padding: 10px 20px;
+		color: #666;
+		font-size:1rem ;
+		font-weight: 500;
+		position:relative; 
+	}		
+
+	.meun-all li a:after{
+		content: "";
+		display:block;
+		position: absolute;
+		bottom:0;
+		left: 21px;
+		height: 2px;
+		width:0px;
+		background:#6ea4bf;
+		transform: scaleX(0);
+	}
+
+	.meun-all li a:hover {
+		transition: .5s;
+		opacity: .8;
+	}
+
+	.meun-all li a:hover:after{
+		width: 60px;
+		transform: scaleX(1.1);
+		transition: .5s;
+	
+	}
+	
+	.meun-all li:last-child a:hover:after{
+		width: 45px;
+		transform: scaleX(1.1);
+		transition: .5s;
+	
+	}

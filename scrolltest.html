@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".a_btn").click(function(){
+				 $('html ,body').css({
+				 	'overflow':'hidden',
+				 	'height':'100%'
+				 });
+			});
+		});
+	</script>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}	
+
+		div{
+			height: 100vh;
+			width: 100vw;
+		}
+
+		.aa{
+			background-image:url(images/b3.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover; 
+			position: relative;
+		}
+
+		.a_btn{
+			position:fixed;
+			margin: auto;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 300px;
+			height: 100px;
+			font-size: 1.5rem;
+			text-align: center;
+			line-height: 100px;
+			color: #fff;
+			border-radius: 5px;
+			background-color: rgba(0,0,0,.5);
+		}
+
+		.bb{
+			background-image:url(images/b4.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover; 
+		}
+
+		.cc{
+			background-image:url(images/b5.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover; 
+		}
+	</style>
+</head>
+<body>
+	<div class="aa">
+		<div class="a_btn">安安幾歲住哪</div>
+	</div>
+	<div class="bb"></div>
+	<div class="cc"></div>
+
+	<!-- /**
+ * Disables the scroll of window
+ *
+ * @param selectorOfWindow
+ * @author Shiva Bhusal
+ */
+function disableScroll(selectorOfWindow){
+ $(selectorOfWindow).find('html, body').css({
+ 'overflow': 'hidden',
+ 'height': '100%'
+ })
+}
+/**
+ * Restores the scroll of window
+ *
+ * @param selectorOfWindow
+ * @author Shiva Bhusal
+ */
+function restoreScroll(selectorOfWindow){
+ $(selectorOfWindow).find('html, body').css({
+ 'overflow': 'auto',
+ 'height': 'auto'
+ })
+} -->
+</body>
+</html>

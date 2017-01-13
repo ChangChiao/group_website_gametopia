@@ -1,0 +1,125 @@
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  16.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.triContainer {
+  transform: translate(-50%, -50%);
+  height: 162px;
+  width: 90px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.tri {
+  position: absolute;
+  animation: pulse 0.75s linear infinite;
+  border-top: 27px solid #215A6D;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 0px;
+}
+.tri.reverse {
+  border-top: 0px;
+  border-bottom: 27px solid #215A6D;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+#center{
+  animation: none;
+}
+.tri:nth-child(1) {
+  left: 30px;
+  animation-delay: 0.15s;
+}
+.tri:nth-child(2) {
+  left: 15px;
+  top: 27px;
+  animation-delay: 0s;
+}
+.tri:nth-child(3) {
+  left: 30px;
+  top: 27px;
+  animation-delay: 0.15s;
+}
+.tri:nth-child(4) {
+  left: 45px;
+  top: 27px;
+  animation-delay: 0.3s;
+}
+.tri:nth-child(5) {
+  top: 54px;
+  animation-delay: -0.15s;
+}
+.tri:nth-child(6) {
+  top: 54px;
+  left: 15px;
+  animation-delay: -0.15s;
+}
+.tri:nth-child(7) { /*中間上方*/
+  top: 54px;
+  left: 30px;
+}
+.tri:nth-child(8) {
+  top: 54px;
+  left: 45px;
+  animation-delay: 0.45s;
+}
+.tri:nth-child(9) {
+  top: 54px;
+  left: 60px;
+  animation-delay: 0.45s;
+}
+.tri:nth-child(10) {
+  top: 81px;
+  animation-delay: 1.2s;
+}
+.tri:nth-child(11) {
+  top: 81px;
+  left: 15px;
+  animation-delay: 1.2s;
+}
+.tri:nth-child(12) { /*中間下方*/
+  top: 81px;
+  left: 30px;
+}
+.tri:nth-child(13) {
+  top: 81px;
+  left: 45px;
+  animation-delay: 0.6s;
+}
+.tri:nth-child(14) {
+  top: 81px;
+  left: 60px;
+  animation-delay: 0.6s;
+}
+.tri:nth-child(15) {
+  top: 108px;
+  left: 15px;
+  animation-delay: 1.05s;
+}
+.tri:nth-child(16) {
+  top: 108px;
+  left: 30px;
+  animation-delay: 0.9s;
+}
+.tri:nth-child(17) {
+  top: 108px;
+  left: 45px;
+  animation-delay: 0.75s;
+}
+.tri:nth-child(18) {
+  top: 135px;
+  left: 30px;
+  animation-delay: 0.9s;
+}

@@ -1,0 +1,688 @@
+*{ margin: 0;padding: 0; list-style: none; 
+	text-decoration: none; 
+	color: #555;
+	/*font-family: 'Noto Sans Kannada', sans-serif;*/
+	font-family: 'Titillium Web', sans-serif;
+	font-family: '微軟正黑體';}
+button{ cursor: pointer; }
+.clearfix{width: 100%;height: 0;clear: both;}
+
+body{
+  background: url(../images/pageForum.png) no-repeat center center;
+  background-attachment: fixed;
+}		
+/*==============================上方BANNER=================================*/
+.banner{
+	width     : 100%;
+	text-align: center;
+	position  : relative;
+	/*overflow  : hidden;*/
+	top: 0px;	
+	z-index: 10;
+	margin: 0 auto;		
+}
+.banner img{
+	position: absolute;
+	/*bottom: 20%;/*改*/
+	top: 100px;	
+	right: 5%;/*改*/
+	max-width: 16%;/*改*/
+	min-width: 300px;/*改*/
+	height  : auto;
+	z-index : 2;
+	opacity: 0;
+	animation: aniPop .5s 1s 1 forwards ease-out;
+}
+@keyframes aniPop{
+	from{transform: translateY(100px); opacity: 0;}
+	to{transform: translateY(0px); opacity: 1;}
+}
+h1.consoleTitle{
+	font-size: 35px;
+	width: 100%;	
+	position: absolute;
+	font-family: 'Exo 2';
+	top: 320px;
+	right: 70px;	
+	z-index: 10;
+	color: rgba(39, 75, 128, 0.6);
+	opacity: 0;
+	letter-spacing: 3px;
+	font-weight: 100;
+	animation: aniShow .5s 1.5s 1 forwards ease-out;
+}
+@keyframes aniShow{
+	from{transform: translateX(-100px); opacity: 0;}
+	to{transform: translateX(0px); opacity: 1;}
+}
+
+h1.pageTitle{
+	top: 160px;
+	right: 20%;
+	width: 100%;
+	word-break: keep-all;
+	animation: aniFade .5s 1.5s 1 forwards;
+	font-size: 140px;	
+	color:  rgba(95, 105, 149,0.3);
+	font-weight: bold;
+	position: absolute;		
+	z-index: 1;		
+}
+}
+@keyframes aniFade{
+	from{color:rgba(192, 192, 192, 0);}
+	to{color:rgba(192, 192, 192, 1);}
+}
+.banner:before, .banner:after{
+	content : '';
+	position: absolute;
+	width   : 0;
+	height  : 0;
+}
+
+.banner:after{ /*覆蓋斜線的多邊形*/
+	top: 0;
+	right: 0;
+	left: 0;	
+	/*display: none;	*/
+	border-top: 400px solid rgba(145, 173, 194, 0.3);
+	border-right:1200px solid transparent;
+	animation:aniSlashUp 1s 1 forwards;
+}
+
+.banner:before{ /*斜線*/
+	top: 0;
+	right: 0;
+	left: 0;	
+	bottom: 0;	
+	/*display: none;	*/
+	border-top: 400px solid rgba(122, 139, 153, 0.3);
+	border-right:1200px solid transparent;
+}
+
+@keyframes aniSlashUp{
+	from{top:0;}
+	to{top:-70px;}
+}
+@keyframes aniSlashDown{
+	from{bottom:0;}
+	to{bottom:-100px;}
+}
+
+
+.forumContainer{
+	width: 50%;	
+	height: 100%;	
+	padding: 20px 0 ;		
+	z-index: 1;	
+	margin: 0 auto;	
+	overflow: hidden;	
+  	box-shadow: 0px 0px 10px #999;
+	background-color: rgba(255,255,255,0.6);
+}
+.forumContentbox{
+	width: 100%;	
+	height: 100%;	
+	padding:400px 0 20px;		
+	z-index: 1;	
+	margin: 0 auto;	
+
+  	/*box-shadow: 0px 0px 10px #999;*/
+	/*background-color: rgba(255,255,255,0.6);*/
+}
+/*==============================中間麵包屑+搜尋+發文=================================*/
+.uiBtns{
+	width: 85%;
+	margin: 40px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.breadcrumbs{
+	font-size: 14px;
+	line-height: 0.875em;
+}
+.post input{
+	height: 38px;
+	font-size: 14px;
+	padding: 5px;	
+}
+.post select{
+	height: 38px;
+	font-size: 14px;
+}
+.btnSearch{
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+.uiBtns form{
+	display: inline-block;
+}
+.post i{
+	color: steelblue;
+	font-size: 24px;
+	padding: 0 5px;
+}
+.btnPost{
+	display: inline-block;
+	margin-left: 10px;
+	width: 60px;
+	height: 40px;
+	color:#fff;
+	border:none;
+	background-color:steelblue;
+	border-radius:3px;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 2.4rem;
+	padding:0px 10px;  
+	text-align: center;
+}
+/*===============================postArticle 發表新文章光箱================================*/
+.giantBox{ /*超巨大光箱背景*/
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .65);
+}
+.postArticle{
+	padding:3px;
+  	border-radius: 8px;
+
+  	background:rgba(255,255,255,0.3);
+  	box-shadow: 0px 0px 10px rgba(12,12,74,0.8019607843137255);
+  	border: 1px solid rgba(255,255,255,0.8);
+
+	width: 50%;
+	position: absolute;
+	top: 10%;
+	right: 0;
+	left: 0;
+	margin:auto;
+}
+.postArticle h2.title{
+	/*background-color: rgba(153, 153, 153, .8);*/
+	padding: 10px;
+	color: #f1f1f1;
+}
+.postArticle .platNcat{ /*包裹平台和分類的div*/
+	width: 80%;
+	margin: 0 auto;
+ } 
+
+.postArticle select{ /*平台和分類*/
+	margin: 10px 0;
+	font-size: 15px;
+	padding: 2px 0;
+
+}
+.postArticle .artTitle{ /*文章標題*/
+	display: block;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 10px 10%;
+	font-size: 19px;
+	padding: 5px;
+	/*border: 1px solid darkgray;*/
+	border-radius: 3px;
+}
+.postArticle div.artImg{ /*文章圖片包裹div*/
+	width: 80%;
+	margin: 0 auto;
+}
+
+i#btnUpload{
+	cursor: pointer;
+	font-size: 30px;
+	color: steelblue;
+}
+
+.postArticle textarea{
+	display: block;
+	box-sizing: border-box; 
+	resize: none;
+	width: 80%;
+	margin: 10px 10%; 
+	padding: 5px;
+	border-radius: 3px;
+}
+
+.postArticle .botUi{
+	width: 80%;
+	margin: 15px auto;
+}
+.postArticle .botUi:after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 0;
+	clear: both;
+}
+.postArticle .botUi span{
+	padding: 0 5px;
+}
+.postArticle .botUi input{
+	width: 100px;
+}
+.postArticle .botUi button[id^=btn]{
+	float:right;
+	margin-left: 10px;
+	width: 60px;
+	height: 30px;
+	color:#fff;
+	border:none;
+	background-color:steelblue;
+	border-radius:3px;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 30px;
+	padding:0px 10px;  
+	text-align: center;
+}
+.postArticle a.btnClose{
+	position: absolute;
+	/*outline: 1px solid red;*/
+	right: 0px;
+	top: 0px;   
+	width: 30px;
+	height: 30px;
+	border-radius: 100px;
+	cursor: pointer;text-align: center;
+
+
+/*
+	text-align: center;
+	cursor: pointer;
+	line-height: 25px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 25px;
+	height: 25px;
+	font-size: 23px;
+	color: steelblue;*/
+}
+
+.postArticle a.btnClose i{
+	line-height: 30px;
+	color: #fff;
+	font-size: 1rem;
+	/*background-color: #fff;*/
+}
+
+
+form#form_Post{
+	height: 89%;  
+	min-height: 100px;  
+	font-size: 20px;
+	margin: 0 auto; 
+	padding: 15px 20px;
+	top: 6%;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	/*text-align: center;*/
+	color: #555;
+	position: relative;
+	background:rgba(255,255,255,0.6);
+}
+/*===============================Pagination 分頁================================*/
+.pagination{
+	width     : 85%;
+	margin    : 0 auto;
+	text-align: center;
+}
+.pagination a{
+	display: inline-block;
+	min-width: 30px;
+	background-color: #aaa;
+	color: white;
+	vertical-align: middle;
+	margin: 20px 0;
+}
+
+/*============================mainContent 中間主要內容區===================================*/
+
+.mainContent{
+	display: flex;
+	flex-direction: column;
+	width      : 85%;
+	margin: 50px auto 20px;
+	font-size  : 18px;
+	line-height: 40px;
+	border: 1px solid #A5B2BF;
+	background-color: rgba(255,255,255,0.5);
+}
+.mainContent .row a{
+	text-decoration: none;
+	color: #555;
+}
+div.row.noticeRow{
+	background-color: rgba(104, 176, 171, 0.5);
+	order: 2;
+
+}
+
+div[class*=Row]:first-child{
+	margin-top: 0;	
+}
+
+div[class*=Row], div[class*=row]{ /*選取所有class有row單字的div，即所有的列*/
+	display: flex;
+	background-color: rgba(190, 213, 97, 0.3);
+	order: 3;
+	justify-content: space-around;
+	align-content: center;
+	margin: 3px 0;
+	padding: 5px 0;
+}
+div[class*=Row] div, div[class*=row] div{ /*所有列底下的欄位格*/
+	box-sizing: border-box;
+	height: 30px;
+	width: 20%;
+	overflow: hidden;
+	line-height: 30px;
+	text-align: center;
+	/*white-space: nowrap;*/
+}
+div[class*=Row] div+div, div[class*=row] div+div{ /*主要設定欄位格之間的border和間距*/
+	padding:0 10px;
+	border-left: 2px solid #eee;
+}
+div.headRow{ 
+	background-color: rgba(79, 142, 175, 1.0); 
+	order: 1;
+}
+
+div.headRow div{color: white;}
+
+div[class*=Row] div.postTitle,div[class*=row] div.postTitle{width: 50%;}
+div[class*=row] div.postTitle{text-align: left;}
+div[class*=Row] div.heat,div[class*=row] div.heat{width: 30%;}
+div[class*=row] div.heat{font-size: 13px;}
+div[class*=row] div.postTime{font-size: 12px;}
+div[class*=row] div.finalPost{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	line-height: 1.2;
+}
+div.finalPost p, div.finalPost a{
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+div[class*=Row]:hover , div[class*=row]:hover , .div.row.noticeRow:hover{
+	transition: 0.35s;
+	background-color: rgba(228,128,144,0.5);
+}
+div.headRow:hover{
+
+	background-color: rgba(79, 142, 175, 1.0); 
+}
+
+/*==============================hotPost 熱門文章=================================*/
+.hotPost{
+	width: 85%;
+	box-sizing: border-box;
+	margin:10px auto;
+	border: 1px solid #A5B2BF;
+	background-color: rgba(255,255,255,0.5);
+}
+.postItem{
+	margin: 5px 0;
+	padding-left: 5px;
+	padding: 5px 0;
+	cursor: pointer;
+	transition: 0.35s;
+}
+
+.postItem:hover{
+	background-color: rgba(228,128,144,0.5);
+}
+
+/*==============================hotProducts 熱門商品=================================*/
+
+.hotProducts{ 
+	width : 85%; 
+	margin: 40px auto;
+	border: 1px solid #A5B2BF;
+	background-color: rgba(255,255,255,0.5);
+}
+h3.title{
+	font-size: 23px;
+	background-color: rgba(79, 142, 175, 1.0);
+	color: #f1f1f1;
+	text-shadow: 0px 0px 5px #94A1AC;
+	padding: 5px;
+}
+.itemBox{
+	display: flex;
+	justify-content: space-around; 
+}
+.prodItem{
+	width: 22%;
+	box-sizing: border-box;
+	padding: 10px 1%;
+	text-align: center;
+	margin: 20px 0;
+	background-color: rgba(68, 130, 191, 0.2);
+	box-shadow: 0px 0px 3px rgba(42, 105, 83, 0.8);
+	cursor: pointer;
+	transition: 0.35s;
+}
+
+.prodItem:hover{
+	box-shadow: 0px 0px 3px rgba(149, 33, 109, 0.8);
+
+	background-color: rgba(193, 71, 136, 0.2);
+}
+.prodItem img{
+	display   : block;
+	width     : 100%;
+	max-height: 200px;
+	margin    : auto;
+	object-fit: cover;
+	object-position: center;
+}
+.prodItem p{
+	font-size: 15px;
+	margin-top: 5px;
+}
+
+/*=============================Footer 刊尾==================================*/
+
+footer{
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #5e353c;
+	text-align: center;
+	padding: 50px 20px;
+}
+footer p{
+	font-size: 13px;
+	color    :white;
+}
+
+/*=====================================forum-article css 文章詳細內容頁============================================*/
+
+/*=====================================h2.articleBar 文章標題============================================*/
+h2.articleBar{ 
+	background-color: #569EA3;
+	color: #E7F2F1;
+	padding: 15px 0 18px;
+	margin-top: 0px;
+}
+h2.articleBar span{ vertical-align: middle; color: #E7F2F1;}
+h2.articleBar .artHeat{
+	float: right;
+	font-size: 15px;
+	padding: 0 20px;
+	border-left: 1px solid rgba(241, 241, 241, 0.5);
+
+}
+.contentBox, .repliesBox{ 
+	margin: 5px 0; 
+	box-sizing: border-box; 
+	/*border: 1px solid #777;*/
+}
+.contentBox pre, .repliesBox pre{
+	padding: 5% 4%;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	font-size: 16px;
+	letter-spacing:2px;
+	line-height: 1.5rem;
+}
+.author{ 
+	background-color: rgba(71, 192, 67, 0.2980392156862745); 
+}
+.author:after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 0;
+	clear: both;
+}
+.author > div {
+	display: inline-block; vertical-align: middle;
+
+}
+.author .avatar{
+	box-sizing: border-box;
+	padding: 10px;
+	width: 90px;
+	height: 90px;
+	/*outline: 1px solid #f05;*/
+}
+.author .avatar img{
+	width: 100%;
+	height: auto;
+
+	/*outline: 1px solid #5f5;*/
+}
+.author .postDate{
+	font-size: 15px;
+	color: rgba(132, 162, 188, 0.6);
+	float: right;
+	margin-right: 30px;
+}
+
+.contentBox .uiBar, .repliesBox .uiBar{
+	border-top: 1px solid #A5B2BF;
+	box-sizing: border-box;
+	padding: 10px 5%;
+}
+.contentBox .uiBar:after, .repliesBox .uiBar:after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 0;
+	clear: both;
+}
+.uiBar button{
+	max-width: 100px;
+	height: 40px;
+	color:#fff;
+	border:none;
+	background-color:steelblue;
+	border-radius:3px;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 2.4rem;
+	padding:0px 10px;  
+	text-align: center;
+	cursor: pointer;
+}
+.btnLike span{ padding-left: 5px; color: #f1f1f1;}
+.uiBar button+button{
+	float: right;
+	margin-left: 20px;
+}
+.fa-thumbs-o-up{
+	color: #f1f1f1;
+}
+/*=====================================Temp 待整理區============================================*/
+
+
+
+@media all and (max-width: 767px){
+	h1.consoleTitle{ 
+			top: 10%;/*改*/
+		 	font-size: 60px;/*改*/
+			position: absolute;
+			right: 10%;/*改*/
+			z-index: 1;
+		 }
+	  h1.pageTitle{
+	 	font-size: 100px;
+	 	z-index: 1;
+	 	top: 18%;
+	 	left: 50px;
+	 	right: 10%;
+	 }
+	 .mainContent{width: 100%;}
+}
+
+/*@media all and (min-width: 768px){
+	h1.consoleTitle{ 
+			top: 10%;
+		 	font-size: 112px;
+			position: absolute;
+			right: 40%;
+			z-index: 1;
+		 }
+	 h1.pageTitle{
+	 	font-size: 120px;
+		z-index: 1;
+	 	top: 25%;
+	 	right: 54%;
+	 	left: 40px;
+	
+	 	animation: aniFadeTwo .5s 1.5s 1 forwards; 
+	 }
+	 @keyframes aniFadeTwo{
+	 	from{color:rgba(192, 192, 192, 0);}
+	 	to{color:rgba(192, 192, 192, .3);}
+	 }
+	 .mainContent{width: 100%;}
+}
+
+@media all and (min-width: 970px){
+	h1.consoleTitle{
+		 	top: 10%;
+		 	font-size: 112px;
+		}
+	h1.pageTitle{
+	font-size: 180px;
+	top: 25%;
+	right: 33%;
+	left: 0;
+	z-index: 1;
+	animation: aniFade .5s 1.5s 1 forwards; 
+	}
+	.mainContent{width: 50%;}
+}
+
+@media all and (min-width: 1200px){
+	h1.consoleTitle{
+			 top: 10%;
+			 bottom: 0;
+			 right: 20%;
+			 font-size: 112px;
+		}
+	h1.pageTitle{
+	font-size: 200px;
+	top: 50%;
+	right: 80%;
+	left: 50px;
+	z-index: -1;
+	animation: aniFade .5s 1.5s 1 forwards; 
+	}
+}*/

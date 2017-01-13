@@ -1,0 +1,440 @@
+*{color: #555;  margin: 0;padding: 0;list-style-type: none; text-decoration: none; font-family: '微軟正黑體';}
+/**{ outline: 1px solid red; }*/
+
+/*===========================Header 導覽列 nav====================================*/
+nav{ 
+	max-width: 100%;
+	background-color: #6fd9d0;
+	text-align: center;
+	position: relative;
+	height: 100px;
+ }
+nav .logo{
+	max-width: 100px;
+	position: absolute;
+	top: 50px;
+	bottom: -50px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+nav .logo img{
+	width: 100%;
+	margin: auto;
+	object-fit: cover;
+	object-position: center;
+}
+
+
+body{
+  background: url(../images/pageShoppingmall.png) no-repeat center center;
+  background-attachment: fixed;
+}
+
+
+
+/*=============================Banner Slider==================================*/
+.banner{
+	text-align: center;
+	width: 100%;
+	height: 550px;
+	position: relative;
+}
+ /*==== 掌機箭頭 =====*/
+
+.sliderArr{
+	width: 100%;
+	position: absolute;
+	top: 250px;
+	z-index: 50;
+}
+
+.sliderArr i{
+	position: absolute;
+	top: 0;
+	font-size: 160px;
+	color: #D32B6F;
+	cursor: pointer;
+}
+.sliderArr i:active{
+	opacity: .7;
+}
+.sliderArr i[class*="left"]{
+	left: 14%;
+}
+.sliderArr i[class*="right"]{
+	right: 14%;
+}
+/*================ SVG PSVita掌機圖片 ================*/
+
+svg{
+	position: absolute;
+	/*padding-top: 80px;*/
+	top: 0;
+	left: 0;
+	right: 0;
+	margin:auto;
+}
+
+
+
+
+/*==============================Filter 篩選/搜尋列 Search=================================*/
+.productsBox{
+	position: relative;
+	top: 0;
+	right: 0;
+	margin: 0 auto;
+  	padding-top: 60px;	
+  	background:rgba(255,255,255,0.6);
+  	box-shadow: 0px 0px 10px #999;
+}
+
+.filter{
+	max-width: 85%;
+	padding: 10px 0;
+	text-align: center;
+	margin: 25px auto;  
+	background-color: rgba(50, 175, 204, 0.2);
+  	box-shadow: 0px 0px 10px rgba(19, 52, 93, 0.5);
+	border-radius: 8px;
+}
+form input[type=search]{ 
+	width:60%;border: none;
+  	border: 1px solid rgba(19, 52, 93, 0.3);}
+
+form button{ background-color: transparent; border: none; margin-left: 3%;}
+form #btnSearch i{ 
+	line-height: 1.5;
+	color: #5270A2; 
+	transform: scale(1.5); 
+	vertical-align: top;
+	padding-bottom: 2px;
+  	transition: 0.35s;
+}
+form #btnSearch i:before{
+	cursor: pointer;
+}
+form select{border-radius: 3px; }
+form *{vertical-align: middle; font-size: 20px;}
+
+form #btnSearch i:hover{
+  color: #6BC6B9;
+}
+
+/*================================Gift 贈禮專區===============================*/
+.giftSct{ 
+	max-width: 85%;
+	height: 120px; 
+	position: relative;
+	background-color:rgba(245,3,50,0.6);
+	margin: 25px auto;
+	text-align: center;
+	border-radius: 3px;
+	overflow: hidden;
+	cursor: pointer;
+	box-shadow: 0px 0px 10px rgba(254, 60, 80, 0.5);
+}
+
+.giftSct a{
+	width: 100%;
+	color: white;
+	font-size: 51px;
+	line-height: 80px;
+}
+
+.giftSct span{
+	display: block;
+	width: 100%;
+	letter-spacing: 2px;
+	font-size: 18px;
+	color: white;
+}
+
+.giftSct div{ position: absolute; font-size: 51px;bottom: 5px;}
+.giftSct .male{ left: 10px; }
+.giftSct .female{ right: 10px; }
+.giftSct i{ color:white; }
+
+.giftSct .male img{
+	position: relative;
+	display:block;
+	width: 100%;
+	height: auto;
+	top: 243px;
+	left: -100px;
+	transform: scale(0.62,0.62) rotateY(180deg);	
+}
+.giftSct .female img{
+	position: relative;
+	display:block;
+	width: 100%;
+	height: auto;
+	top: 248px;
+	right: -90px;
+	transform: scale(0.6,0.6);
+}
+/*=============================Main Content 下方主要內容區==================================*/
+.mainContent{ 
+	width: 85%;
+	margin: 50px auto 0;
+}
+.mainContent > div{ float: left; }
+.mainContent:after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 0;
+	clear: both;
+}
+
+
+
+
+/*==================================Ads 左下方廣告區域=============================*/
+.adsSct{ margin-right: 2%; width: 18%; /*margin-top: 7px;*/}
+.adsSct .item-advs{ display: block; }
+.adsSct .item-advs+.item-advs{ margin-top: 40px; }
+.adsSct img{
+	display: block;
+	width: 100%;
+	max-height:400px;
+	margin: auto;
+	object-fit: cover;
+	object-position: center;
+	cursor: pointer;
+	box-shadow: 0px 0px 0px 1px black;
+}
+
+/*=====================================Products 全商品區==========================*/
+.products{ width: 80%; }
+.products .block-title{ 
+	font-size: 24px; 
+	line-height: 1.5em; 
+	background-color: rgba(110, 190, 142, 0.9);
+	border-radius: 5px;
+	color: #f1f1f1;
+	padding: 5px 8px;
+	text-align: center;
+	text-shadow: 0px 0px 3px rgba(37,44,74,.6);
+}
+
+
+.products h5{
+	color: #2F4979;
+	font-size: 20px;
+	line-height: 1.5em;
+}
+
+
+.products [class^="tag"]{ /*所有class name前頭帶有tag的標籤*/
+	width: 60px;
+	margin: 5px auto;
+	color:#fff;
+	letter-spacing: 1px;
+	background-color:#80aab5;
+	font-size: 13px;
+	border-radius: 5px;
+	line-height: 1.5rem;
+	padding:0px 6px;  
+	text-align: center;
+}
+.products .row{
+	text-align: left;
+	font-size: 0;
+}
+.products .row .item-box{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 33%;
+	padding: 0 2%;
+}
+.products .row .item{
+	text-align: center;
+	box-shadow: 0 0 5px rgba(24, 93, 185, 0.5);
+	padding: 15px 0;
+	border-radius: 3px;
+	margin: 10px 0;
+
+	transition: 0.35s;
+	cursor: pointer;	
+}
+
+.item:hover{
+	background-color: rgba(255, 167, 0, 0.2);
+}
+
+
+
+.products .row .item img{
+	display: block;
+	width: 85%;
+	/*max-height: 250px;*/
+	height: auto;
+	margin: auto;
+	object-fit: cover;
+	box-shadow: 0px 0px 1px 1px #ccc;
+}
+.products .row:after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 0;
+	clear: both;
+}
+.products .price{
+	font-size: 16px;
+	line-height: 1rem;
+}
+
+/*=====================================Popular 熱門新品==========================*/
+
+.prod-popular{ 
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+/*=====================================Latest 最新商品==========================*/
+
+.prod-latest{
+	width: 100%;
+}
+
+.prod-latest:after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 0;
+	clear: both;
+}
+
+/*===========================Footer 刊尾====================================*/
+footer{
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #5e353c;
+	text-align: center;
+	padding: 50px 20px;
+}
+footer p{
+	font-size: 13px;
+	color:white;
+}
+
+/*==========================Global Tags 共用標籤樣式=====================================*/
+
+.products div.tagPS{
+  background-color: #0072BC;
+}
+
+.products div.tag3DS{
+  background-color: #C05459;
+}
+
+.products div.tagXBOX{
+  background-color: #7CC576;
+}
+
+.products div.tagPC{
+  background-color: #A865A8;
+}
+
+/*============================Slider============================*/
+
+#sliderBox{
+	position: absolute;
+	top: 10px;
+	left: 0;
+	right: 0;
+	width: 600px;
+	height: 335px;
+	margin:80px auto 0;
+
+
+}
+#sliderBox .slide{
+	width: inherit;
+	height: inherit;
+	text-align: center;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin:0 auto;
+	opacity: 0;
+	z-index: 1;
+	transition: opacity 1.5s;
+}
+#sliderBox .show{
+	opacity: 1;
+	z-index: 2;
+}
+
+#sliderBox img{
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	object-position: center;
+}
+
+/*======================================= RWD ==============================================*/
+
+@media screen and (max-width:767px){
+	.productsBox{width: 100%;}
+	.adsSct{display: none;}
+	.products{width: 100%;}
+	.banner{height: 400px;margin-bottom: 40px;}
+	svg{display: none;}
+	.sliderArr{display: none;}
+	div.filter * {font-size: 15px;} /*中間搜尋列*/
+	div.filter form input{width: 40%;}
+
+	.giftSct a{font-size: 21px;} /*送禮專區*/
+	.giftSct span{font-size: 13px;}
+
+	.mainContent{width: 100%; margin:40px auto;} /*主內容與商品區*/
+	.products .block-title{border-radius: 0px;}
+	.prod-latest .row{text-align: left;}
+	.products .row .item{padding: 10px 0;}
+	.products .row .item img{width: 85%; object-position: top;}
+	.prod-latest .row .item-box{width: 50%;}
+	.prod-latest .row .item-box:last-child(){display: none;}
+	.giftSct .male img,.giftSct .female img{display: none;}
+	#sliderBox{width: 100%;height: 100%;margin:auto;}
+}
+
+/*小藍平板直*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+	.productsBox{width: 100%;}
+	.banner{height: 400px;}
+	.sliderArr{top: 105px;}
+	.sliderArr i{font-size: 160px;}
+	.sliderArr i[class*="left"]{left: 17%;}
+	.sliderArr i[class*="right"]{right: 17%;}
+	#sliderBox{top: -12px;}
+}
+
+/*小黃平板橫*/
+@media screen and (min-width: 992px) and (max-width: 1199px){
+	.productsBox{width: 970px;}
+	.sliderArr{top: 110px;}
+	#sliderBox{top: -15px;}
+}
+
+/*小粉桌機*/
+@media screen and (min-width: 1200px){
+	.productsBox{width: 1170px;}
+	.banner{height: 550px;}
+	.sliderArr{top: 160px;}
+	.sliderArr i{font-size: 200px;}
+	.sliderArr i[class*="left"]{left: 14%;}
+	.sliderArr i[class*="right"]{right: 14%;}
+
+}
+
+
+
+

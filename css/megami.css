@@ -1,0 +1,2261 @@
+*{
+  margin: 0;
+  padding: 0;
+  /*font-size: 0;*/
+  font-family: "微軟正黑體";
+  color: #555;
+  /*outline: 1px solid #f05;*/
+}
+
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+}
+
+
+.header{
+  position: fixed;
+  top: 0;
+
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  
+}
+
+.blackback{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.65);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  display: none;
+}
+
+
+.backgroundCover{
+  width: 100%;
+  height: 100vh;
+  background-image:url(../images/bg022.jpg) no-repeat center center; 
+  background-size: cover;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.back{
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  /*z-index: 10;*/
+}
+
+
+  
+/*問題集*/
+    .Qbox{
+      position: absolute;
+      top:13%;
+      left: 0;
+      right: -10%;
+      margin: 0 auto;
+      height: 10%;
+      z-index: 8;
+      width: 40%;
+      display: none;
+    }
+    /*類型問題*/
+
+    .QtypeQ{
+      position: relative;
+      float: left;
+      top: 0;
+      z-index: 8;
+      width: 80%;
+      height: 55px;
+      margin: 0px auto 30px; 
+      border-top: 3px double rgba(255,255,255,0.5);
+      border-bottom: 3px double rgba(255,255,255,0.5);
+      font-size: 20px;
+      text-shadow:  0px 0px 10px rgba(35,91,72,0.8);
+      color: #fff;
+      line-height: 53px;
+
+    background: -webkit-linear-gradient(left, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(left, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff6060', endColorstr='#00ffffff',GradientType=1 );
+
+    }
+
+    .Qtypes{
+      cursor: pointer;
+      position: relative;
+      float: left;
+      top: 0;
+      z-index: 8;
+      width: 35%;
+      height: 55px;
+      margin: 10px 19px;
+      border-radius: 5px;  
+      border: 3px double rgba(255,255,255,0.5);
+      background-color: rgba(41,175,213,0.2);
+      font-size: 20px;
+      text-shadow:  0px 0px 10px rgba(17,59,44,0.8);
+      color: #fff;
+      line-height: 53px;
+      transition: 0.5s;
+    }
+
+
+.Qtypes:hover{
+  background-color: rgba(140,243,205,0.4);
+}
+
+
+
+
+    /*平台問題*/
+
+    .QgameMom{
+      position: relative;
+      top: 100%;
+      left: 0%;
+      right: 0;
+      margin: 0 auto;
+      display: none;
+    }
+
+    .QgameMomQ{
+      position: relative;
+      float: left;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 8;
+      width: 80%;
+      height: 55px;
+      margin: 0px auto 30px; 
+      border-top: 3px double rgba(255,255,255,0.5);
+      border-bottom: 3px double rgba(255,255,255,0.5);
+      font-size: 20px;
+      text-shadow:  0px 0px 10px rgba(35,91,72,0.8);
+      color: #fff;
+      line-height: 53px;
+
+    background: -webkit-linear-gradient(left, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(left, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff6060', endColorstr='#00ffffff',GradientType=1 );
+
+    }
+
+    .QgameMoms{
+      cursor: pointer;
+      position: relative;
+      float: left;
+      top: 0;
+      z-index: 8;
+      width: 35%;
+      height: 55px;
+      margin: 10px 19px;
+      border-radius: 5px;  
+      border: 3px double rgba(255,255,255,0.5);
+      background-color: rgba(41,175,213,0.2);
+      font-size: 20px;
+      text-shadow:  0px 0px 10px rgba(17,59,44,0.8);
+      color: #fff;
+      line-height: 53px;
+      transition: 0.5s;
+    }
+
+
+
+.QgameMoms:hover{
+  background-color: rgba(140,243,205,0.4);
+}
+
+
+
+/*商品小圖開始*/
+
+.productLightbox{
+  position: absolute;
+  min-height: 340px;  
+  min-width: 250px; 
+  width:13%; 
+  padding:3px; 
+  top: 25%; 
+  left: 54%; 
+  right:13%;
+  margin: 0 auto;
+  z-index: 5;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  display: none;
+}
+
+.productTitle{
+  height: 90%;  
+  min-height: 100px;  
+  font-size: 20px;
+  margin: 0 auto; 
+  padding:  15px 20px;
+  text-align: center;
+  background:rgba(179,196,33,0.3);
+  border:1px solid rgba(255,255,255,0.5);
+  box-shadow: 0px 0px 10px rgba(47,121,96,0.6);
+  color: #555;
+  opacity: 0.9;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  z-index: 2;
+  transform-style:preserve-3D;
+
+}
+
+.productTitle::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 5px rgba(255,255,255,0.2980392156862745);
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale3d(0.9,0.9,1);
+  transform: scale3d(0.9,0.9,1);
+}
+
+
+.productLightbox:hover .productTitle {
+  background-color: rgba(58,52,42,0);
+}
+
+
+
+.productImg{
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px rgba(47,121,96,0.6);
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  z-index: 2;
+  transform-style:preserve-3D;
+  width: 100%;
+}
+
+.productImg img{
+  width: 100%;
+}
+
+.productLightbox:hover .productImg img{
+  opacity: 0.4;
+  -webkit-filter: blur(6px);
+  filter: blur(6px);
+
+}
+
+.productName{
+  text-shadow: 0px 0px 5px rgba(35,91,72,0.8);
+  color: #fff;
+  /*font-weight: bold;*/
+  font-size: 24px;
+  padding: 10px 0 0;
+}
+
+.productLightbox:hover .productName{
+  opacity: 0;
+}
+
+
+.view{
+  position: absolute;
+  top: 30%;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  text-shadow: 0px 0px 10px rgba(47,121,96,0.8);
+
+}
+
+
+
+.view span,.view i{
+  padding: 1em;
+  opacity: 0;
+  display: block;
+  color: #fff;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s forwards;
+  transition: opacity 0.35s, transform 0.35s forwards;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.view span{
+  font-size: 24px;
+}
+
+.view i{
+  font-size: 50px;
+  padding: 0;
+}
+
+.productLightbox:hover .productTitle::before,.productLightbox:hover .view span,.productLightbox:hover .view i {
+  opacity: 1;
+  -webkit-transform: scale3d(1,1,1);
+  transform: scale3d(1,1,1);
+  
+  text-shadow: 0px 0px 10px rgba(35,91,72,0.8);
+}
+
+
+.productLightbox:hover {
+  background: rgba(86,189,156,0.6666666666666666);
+  border-radius: 5px;
+}
+
+
+
+/*商品詳細內容*/
+
+.productLightboxDetal{
+  position: absolute; 
+  height: 75%;
+  min-height: 270px;  
+  min-width: 250px; 
+  width:60%; 
+  padding:3px;
+  top: 13%; 
+  left: 21%; 
+  z-index: 10;
+  border-radius: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: none;
+
+  background:rgba(255,255,255,0.3);
+  box-shadow: 0px 0px 10px rgba(12,12,74,0.8019607843137255);
+  border: 1px solid rgba(255,255,255,0.8);
+}
+.cancelBtn{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 3;   
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.icon-cancel{
+  font-size: 20px;
+  color: #ddd;
+  vertical-align: middle;
+}
+
+
+
+.productDetal{
+  height: 89%;  
+  min-height: 100px;  
+  font-size: 20px;
+  margin: 0 auto; 
+  padding: 15px 20px;
+  overflow:auto;
+  top: 6%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  color: #555;
+  overflow-x: hidden;
+  position: relative;
+  background:rgba(255,255,255,0.6);
+
+}
+
+.productPaW{
+  width: 80%;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#SH_ProductImg{
+  width: 100%;
+
+}
+.productTable{
+  display: inline-block;
+  width: 55%;
+}
+
+.productPic{
+  display: inline-block;
+  width: 40%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+
+.productWord{
+  margin-left: 30px;
+  display: inline-block;
+  text-align: left;
+
+  border-collapse:collapse;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+#price{
+  font-size: 28px;
+  color: #d05;
+  padding: 0 5px;
+}
+
+
+.payway{
+  width: 100%;
+}
+
+.payway img{
+  width: 25%;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  vertical-align: middle;
+}
+
+.payway span{
+  font-size: 16px;
+  vertical-align: middle;
+
+}
+
+
+.btn_addCart{
+  width: 100%;
+  height: 40px;
+  color:#fff;
+  background-color:steelblue;
+  border-radius:5px;
+  font-weight: 500;
+  /*font-size: 1rem;*/
+  line-height: 2.4rem;
+  padding:0px 10px;
+  text-align: center;
+
+  cursor: pointer;
+  border: none;
+  font-size: 22px;
+  box-sizing: border-box;
+}
+
+
+.productWord th, .productWord td, .productWord a{
+  font-size: 16px;
+  padding: 5px 5px 30px;
+  box-sizing: border-box;
+}
+
+
+
+.productWord td .gameMom{
+  position: relative;
+  text-align: center;
+  margin-right: 30px;
+  padding: 4px 6px 4px 14px;
+  width:50px;
+  height: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+  top: 0;
+}
+
+
+#gameMomPS:after, #gameMom3DS:after, #gameMomXBOX:after {
+    content: "";
+    height: 0;
+    width: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.productWord td h2{
+  font-size: 36px;
+}
+
+#gameMomPS{
+  background-color: #0072BC;
+}
+
+#gameMomPS:after{
+    border: 15px solid #0072BC;
+    border-right: none;
+    border-color: transparent #0072BC transparent #0072BC;
+    left: 47px;
+}
+
+#gameMomPC{
+  background-color: #9955FF;
+}
+
+#gameMomPC:after{
+    border: 15px solid #9955FF;
+    border-right: none;
+    border-color: transparent #9955FF transparent #9955FF;
+    left: 50px;
+}
+
+#gameMom3DS{
+  background-color: #C05459;
+}
+#gameMom3DS:after{
+  border: 15px solid #C05459;
+  border-right: none;
+  border-color: transparent #C05459 transparent #C05459;
+  left: 50px;
+}
+
+#gameMomXBOX{
+  background-color: #7CC576;
+}
+#gameMomXBOX:after{
+  border: 15px solid #7CC576;
+  border-right: none;
+  border-color: transparent #7CC576 transparent #7CC576;
+  left: 63px;
+}
+
+.productEx{
+  border-top: 1px solid #aaa;
+  padding: 30px 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+
+.productEx img{
+  width: 85%;
+  padding: 15px 0;
+  box-sizing: border-box;
+}
+
+.productExContent{
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.productEx p{
+  font-size: 20px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 10px;
+  letter-spacing: 2px;
+  line-height: 40px;
+  box-sizing: border-box;
+}
+
+.memo{
+  background-color: #BFD8CC;
+}
+
+.memoContent{
+  background-color: rgba(255,255,255,0.5);
+}
+
+
+/*對話框開始*/
+
+.megamiContent{
+  width: 66%;
+  height: 30%;
+  position: absolute;
+  bottom: 60px;
+  left: 18%;
+  z-index: 4;
+  box-sizing: border-box;
+}
+
+.megamiSpeakperson{/*說話者 會員暱稱或預設角色*/
+  padding: 10px 50px 10px 30px;
+  font-size: 32px;
+  background-color: rgba(19, 52, 93, 0.6);
+  box-shadow: 0px 0px 50px rgba(255, 255, 187, 0.5);
+  position: absolute;
+  color: rgba(255, 255, 255, 0.6);
+  border: 6px double rgba(255,255,255,0.75);
+  border-radius: 8px 70px 8px 8px;
+  bottom: 100%;
+  left: -5px;  
+  box-sizing: border-box;
+}
+
+.megamiBottonBar{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+  text-align: left;
+  background-color: rgba(19, 52, 93, 0.5);
+  box-shadow: 0px 0px 10px rgba(255, 255, 187, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ABF6F0;
+  border-radius: 8px;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+.megamiBottonBar:hover {
+  background: rgba(86,189,156,0.6666666666666666);
+}
+
+
+.megamiNextBox{
+  font-size: 45px;
+  text-align: center;
+  line-height: 48px;
+  /*display: none;*/
+}
+
+.megamiNextBox .fa-caret-down{
+  padding: 6px 5px 3px;
+  display: inline-block;
+  vertical-align: middle;
+  color: rgba(255,255,255,0.8);
+
+}
+
+.megamiNextBotton{
+  font-size: 28px;
+  padding-bottom: 5px;  
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  color: rgba(255,255,255,0.8);
+}
+
+
+
+.megamiMoreagainBox{
+
+  font-size: 45px;
+  text-align: center;
+  line-height: 48px;
+  display: none;
+}
+
+.megamiMoreagainBox img{
+  width: 28px;
+  padding-bottom: 5px;
+  vertical-align: middle;
+  /*padding-right: 10px;*/
+}
+
+.megamiAgainBotton{
+  font-size: 28px;
+  padding-bottom: 5px;  
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  color: rgba(255,255,255,0.8);
+}
+
+
+
+
+.megamiContentbox{
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+  background-color: rgba(19, 52, 93, 0.6);
+  box-shadow: 0px 0px 50px rgba(255, 255, 187, 0.5);
+  z-index: 2;
+  border: 6px double rgba(255,255,255,0.75);
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+.megamiContentword{/*對話內容*/
+  padding: 20px 30px;
+  text-align: left;
+  font-size: 36px;
+  color: #fff;
+  letter-spacing:  5px;
+  box-sizing: border-box;
+}
+
+/*對話框結束*/
+
+
+.megami{/*女神父層*/
+  display: inline-block;
+  width: 43%;
+  vertical-align: top;
+  padding-top: 40px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  z-index: 2  ;
+  display: none;
+}
+
+#megamiImg{/*女神本體*/
+  width: 105%;
+  transform: rotate(1.1deg);
+  box-sizing: border-box;
+}
+
+
+
+
+
+/*水晶球相關開始*/
+
+.megamiBg{
+  position: absolute;
+  top: 50%;
+  left: 56%;
+  bottom: 0;
+  display: none;
+}
+
+
+
+.light{/*水晶球內的彩色光點*/
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 360px;
+  right: 0;
+  box-sizing: border-box;
+
+  /*display: none;*/
+  z-index: 3;
+}
+
+.ball {/*水晶球*/
+
+  /*display: none;*/
+  z-index: 3;
+
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  box-shadow: 0px 0px 50px #8FA5CB;
+  background: radial-gradient(circle at bottom, #81e8f6, #76deef 10%, #055194 80%, #062745 100%); }
+  .ball:before {
+    content: "";
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 100%;
+    background: radial-gradient(circle at top, white, rgba(255, 255, 255, 0) 58%);
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    z-index: 3; }
+  .ball:after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+    z-index: 3;
+    -webkit-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg); }
+  .ball .shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+    -webkit-transform: rotateX(90deg) translateZ(-160px);
+    transform: rotateX(90deg) translateZ(-160px);
+    z-index: 2; }
+  .ball.plain {
+    background: black; }
+    .ball.plain:before, .ball.plain:after {
+      display: none; }
+  .ball.bubble {
+    background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.5), rgba(240, 245, 255, 0.5) 40%, rgba(225, 238, 255, 0.5) 60%, rgba(43, 130, 255, 0.4));
+    -webkit-animation: bubble-anim 2s ease-out infinite;
+    animation: bubble-anim 2s ease-out infinite; }
+    .ball.bubble:before {
+      -webkit-filter: blur(0);
+      filter: blur(0);
+      height: 80%;
+      width: 40%;
+      background: radial-gradient(circle at 130% 130%, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 46%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 58%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 100%);
+      -webkit-transform: translateX(131%) translateY(58%) rotateZ(168deg) rotateX(10deg);
+      transform: translateX(131%) translateY(58%) rotateZ(168deg) rotateX(10deg); }
+    .ball.bubble:after {
+      display: block;
+      background: radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 74%, white 80%, white 84%, rgba(255, 255, 255, 0) 100%); }
+
+.stage {
+  width: 500px;
+  min-width: 10%;
+  min-height: 10%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: inline-block;
+  margin: 20px;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  -ms-perspective: 1200px;
+  -o-perspective: 1200px;
+  perspective: 1200px;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  box-sizing: border-box;
+}
+
+
+.megamiBg .heart-0, .megamiBg .heart-1, .megamiBg .heart-2, .megamiBg .heart-3, .megamiBg .heart-4 {
+  width: 1px;
+  height: 1px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  opacity: 0.6;
+  box-sizing: border-box;
+}
+
+@keyframes shine_one {
+  50% {
+    width: 0px;
+    height: 0px;
+    box-shadow: 0 0 100px 50px rgba(202, 52, 112, 0.3), 0 0 100px 80px rgba(202, 52, 112, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@keyframes shine_two {
+  50% {
+    width: 0px;
+    height: 0px;
+    box-shadow: 0 0 100px 50px rgba(245, 223, 163, 0.3), 0 0 100px 80px rgba(245, 223, 163, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+@keyframes shine_three {
+  50% {
+    width: 0px;
+    height: 0px;
+    box-shadow: 0 0 100px 50px rgba(95, 170, 236, 0.6), 0 0 100px 80px rgba(95, 170, 236, 0.6);
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+@keyframes shine_four {
+  50% {
+    width: 0px;
+    height: 0px;
+    box-shadow: 0 0 100px 50px rgba(141, 199, 55, 0.3), 0 0 100px 80px rgba(141, 199, 55, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+@keyframes shine_five {
+  50% {
+    width: 0px;
+    height: 0px;
+    box-shadow: 0 0 100px 50px rgba(16, 201, 198, 0.5), 0 0 100px 80px rgba(16, 201, 198, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.megamiBg .heart-0{
+  top: 40%;
+  right: 100%;
+  box-shadow: 0 0 80px 20px rgba(205, 42, 212, 0.5);
+  animation: runone 8s infinite linear, shine_one 3s infinite linear;  
+}
+
+.megamiBg .heart-1{
+  top: 50%;
+  right: 140%;
+  box-shadow: 0 0 80px 20px rgba(255, 217, 154, 0.6);
+  animation: shine_two 4s infinite linear, runtwo 6s infinite linear;
+
+}
+
+.megamiBg .heart-2{
+  top: 30%;
+  right: 120%;
+  box-shadow: 0 0 80px 20px rgba(77, 107, 213, 0.5);
+  animation: shine_three 2s infinite linear, runthree 10s infinite linear;
+}
+
+.megamiBg .heart-3{
+  top: 70%;
+  right: 100%;
+  box-shadow: 0 0 80px 20px rgba(55, 219, 124, 0.5);
+  animation: shine_four 2.5s infinite linear, runfour 8s infinite linear;
+}
+
+.megamiBg .heart-4{
+  top: 80%;
+  right: 130%;
+  box-shadow: 0 0 80px 20px rgba(87, 77, 177, 0.3);
+  animation: shine_five 3.5s infinite linear, runfive 7s infinite linear;
+}
+
+
+
+@keyframes runone{
+  30%{
+    top: 55%;
+    right: 140%;
+  }
+  60%{
+    top: 80%;
+    right: 110%;
+  }
+}
+
+@keyframes runtwo{
+  30%{
+    top: 30%;
+    right: 100%;
+  }
+  60%{
+    top: 65%;
+    right: 140%;
+  }
+}
+
+@keyframes runthree{
+  30%{
+    top: 38%;
+    right: 140%;
+  }
+  60%{
+    top: 40%;
+    right: 100%;
+  }
+}
+
+@keyframes runfour{
+  30%{
+    top: 35%;
+    right: 100%;
+  }
+  60%{
+    top: 75%;
+    right: 135%;
+  }
+}
+
+@keyframes runfive{
+  30%{
+    top: 45%;
+    right: 110%;
+  }
+  60%{
+    top: 15%;
+    right: 120%;
+  }
+}
+
+/*水晶球相關結束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================rwd=======================*/
+/*手機*/
+  @media screen and (max-width:767px){
+      
+    /*問題集*/
+    .Qbox{
+      position: absolute;
+      top: 17%;
+      left: 0;
+      right: -10%;
+      bottom: 0;
+      margin: 0 auto;
+      height: 50%;
+      top: 11%;
+      z-index: 8;
+      width: 58%;
+    }
+    /*類型問題*/
+
+    .QtypeQ{
+      position: relative;
+      float: left;
+      top: 0;
+      z-index: 8;
+      width: 86.5%;
+      height: 55px;
+      margin: 0px 11px 30px; 
+      border-top: 3px double rgba(255,255,255,0.5);
+      border-bottom: 3px double rgba(255,255,255,0.5);
+      font-size: 20px;
+      text-shadow:  0px 0px 10px rgba(35,91,72,0.8);
+      color: #fff;
+      line-height: 53px;
+
+    background: -webkit-linear-gradient(left, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(left, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff6060', endColorstr='#00ffffff',GradientType=1 );
+
+    }
+
+    .Qtypes{
+      cursor: pointer;
+      position: relative;
+      float: left;
+      top: 0;
+      z-index: 8;
+      width: 39%;
+      height: 55px;
+      margin: 8px 8px;
+      border-radius: 5px;  
+      border: 3px double rgba(255,255,255,0.5);
+      background-color: rgba(41,175,213,0.2);
+      font-size: 20px;
+      text-shadow:  0px 0px 10px rgba(17,59,44,0.8);
+      color: #fff;
+      line-height: 53px;
+      transition: 0.5s;
+    }
+
+
+    /*平台問題*/
+
+    .QgameMom{
+      position: relative;
+      top: 15%;
+      left: 0%;
+      display: none;
+    }
+
+    .QgameMomQ{
+     position: relative;
+      float: left;
+      top: 0;
+      z-index: 8;
+      width: 86.5%;
+      height: 55px;
+      margin: 0px 11px 30px; 
+      border-top: 3px double rgba(255,255,255,0.5);
+      border-bottom: 3px double rgba(255,255,255,0.5);
+      font-size: 20px;
+      text-shadow:  0px 0px 10px rgba(35,91,72,0.8);
+      color: #fff;
+      line-height: 53px;
+
+    background: -webkit-linear-gradient(left, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(left, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff6060', endColorstr='#00ffffff',GradientType=1 );
+
+    }
+
+    .QgameMoms{
+      cursor: pointer;
+      position: relative;
+      float: left;
+      top: 0;
+      z-index: 8;
+      width: 39%;
+      height: 55px;
+      margin: 8px 8px;
+      border-radius: 5px;  
+      border: 3px double rgba(255,255,255,0.5);
+      background-color: rgba(41,175,213,0.2);
+      font-size: 20px;
+      text-shadow:  0px 0px 10px rgba(17,59,44,0.8);
+      color: #fff;
+      line-height: 53px;
+      transition: 0.5s;
+    }
+
+
+
+
+
+    /*商品小圖開始*/
+    .productLightbox{
+      position: absolute;
+      min-height: 200px;  
+      min-width: 170px;
+      padding:3px; 
+      margin: 0 auto;
+      top: 25%; 
+      left: 0;
+      right: 0;
+      /*bottom: 0;*/
+      z-index: 5;
+      box-sizing: border-box;
+      cursor: pointer;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      display: none;
+    }
+    .productTitle{
+      background:rgba(255,255,255,0.3);
+      border:1px solid rgba(255,255,255,0.5);
+
+}
+
+    /*商品詳細內容*/
+
+    .productLightboxDetal{
+      position: absolute; 
+      height: 90%;
+      min-height: 270px;  
+      min-width: 250px; 
+      width:95%;
+      padding:3px;
+      top: 5%; 
+      left: 0;
+      right: 0;
+      margin: 0 auto; 
+      z-index: 10;
+      border-radius: 8px;
+      box-sizing: border-box;
+      overflow: hidden;
+      display: none;
+
+      background:rgba(255,255,255,0.3);
+      box-shadow: 0px 0px 10px rgba(12,12,74,0.8019607843137255);
+      border: 1px solid rgba(255,255,255,0.8);
+    }
+
+    .productPaW{
+      width: 90%;
+      text-align: center;
+      padding-bottom: 50px;
+      padding-top: 30px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+     
+    .productTable{
+      display: inline-block;
+      width: 110%;
+      text-align: center;
+      top: 0;
+      left: -10%;
+
+    }
+
+    .productPic{
+      display: inline-block;
+      width: 100%;
+      vertical-align: middle;
+      box-sizing: border-box;
+    }
+
+    .payway img{
+      width: 30%;
+      padding-bottom: 5px;
+      vertical-align: middle;
+    }
+
+    .productEx img{
+      width: 95%;
+      padding: 15px 0;
+      box-sizing: border-box;
+    }
+
+    .productEx p{
+      font-size: 20px;
+      width: 95%;
+      margin: 0 auto;
+      padding: 10px;
+      letter-spacing: 2px;
+      line-height: 40px;
+      box-sizing: border-box;
+    }
+
+   
+    .productWord{
+      display: inline-block;
+      text-align: left;
+      
+      border-collapse:collapse;
+      box-sizing: border-box;
+      vertical-align: middle;
+    }
+
+
+    .productWord th, .productWord td, .productWord a{
+      font-size: 16px;
+      padding: 5px 5px 30px;
+      box-sizing: border-box;
+    }
+
+
+
+    .productWord td .gameMom{
+      position: relative;
+      text-align: center;
+      margin-right: 30px;
+      padding: 4px 6px 4px 14px;
+      width:50px;
+      height: 30px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 30px;
+      color: #fff;
+      top: 0;
+    }
+
+
+    /*對話框開始*/
+
+    .megamiContent{
+      width: 72%;
+      height: 35%;
+      position: absolute;
+      bottom: 35px;
+      left: 15%;
+      z-index: 4;
+      box-sizing: border-box;
+    }
+
+    .megamiSpeakperson{/*說話者 會員暱稱或預設角色*/
+      padding: 8px 30px 8px 10px;
+      font-size: 18px;
+      background-color: rgba(19, 52, 93, 0.6);
+      box-shadow: 0px 0px 50px rgba(255, 255, 187, 0.5);
+      position: absolute;
+      color: rgba(255, 255, 255, 0.6);
+      border: 6px double rgba(255,255,255,0.75);
+      border-radius: 8px 70px 8px 8px;
+      bottom: 100%;
+      left: -5px;  
+      box-sizing: border-box;
+    }
+
+    .megamiBottonBar{
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 90%;
+      height: 50px;
+      cursor: pointer;
+      text-align: left;
+      background-color: rgba(19, 52, 93, 0.5);
+      box-shadow: 0px 0px 10px rgba(255, 255, 187, 0.5);
+      color: rgba(255, 255, 255, 0.8);
+      border: 1px solid #ABF6F0;
+      border-radius: 8px;
+      transition: 0.5s;
+      box-sizing: border-box;
+    }
+    .megamiBottonBar:hover {
+      background: rgba(86,189,156,0.6666666666666666);
+    }
+
+
+    .megamiNextBox{
+      font-size: 36px;
+      text-align: center;
+      line-height: 0px;
+      /*display: none;*/
+    }
+
+    .megamiNextBox .fa-caret-down{
+      padding: 6px 5px 3px;
+      display: inline-block;
+      vertical-align: middle;
+      color: rgba(255,255,255,0.8);
+
+    }
+
+    .megamiNextBotton{
+      font-size: 24px;
+      padding-bottom: 5px;  
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      color: rgba(255,255,255,0.8);
+    }
+
+
+
+    .megamiMoreagainBox{
+
+      font-size: 26px;
+      text-align: center;
+      line-height: 45px;
+      display: none;
+    }
+
+    .megamiMoreagainBox img{
+      width: 24px;
+      padding-bottom: 5px;
+      vertical-align: middle;
+      /*padding-right: 10px;*/
+    }
+
+    .megamiAgainBotton{
+      font-size: 24px;
+      padding-bottom: 5px;  
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      color: rgba(255,255,255,0.8);
+    }
+
+
+
+
+    .megamiContentbox{
+      width: 100%;
+      height: 70%;
+      border-radius: 10px;
+      background-color: rgba(19, 52, 93, 0.6);
+      box-shadow: 0px 0px 50px rgba(255, 255, 187, 0.5);
+      z-index: 2;
+      border: 6px double rgba(255,255,255,0.75);
+      position: absolute;
+      bottom: 0;
+      box-sizing: border-box;
+    }
+
+    .megamiContentword{/*對話內容*/
+      padding: 10px 20px;
+      text-align: left;
+      font-size: 20px;
+      color: #fff;
+      letter-spacing:  5px;
+      box-sizing: border-box;
+    }
+
+    /*對話框結束*/
+
+    .megami{/*女神父層*/
+      display: inline-block;
+      width: 100%;
+      vertical-align: top;
+      padding-top: 40px;
+      box-sizing: border-box;
+      margin: 0 auto;
+      z-index: 2  ;
+      display: none;
+    }
+
+    #megamiImg{/*女神本體*/
+      width: 105%;
+      transform: rotate(1.1deg);
+      box-sizing: border-box;
+    }
+
+
+
+   /*水晶球*/ 
+    .megamiBg{
+      width: 100%;
+      position: absolute;
+      top:0%;
+      left: 15%;
+      bottom: 0;
+      z-index: 3;
+      margin: 0 auto;
+      display: none;
+    }
+
+    .stage {
+      width: 250px;
+      height: 250px;
+      display: none;
+    }
+
+    .light{/*水晶球內的彩色光點*/
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 65%;
+      right: 0;
+      box-sizing: border-box;
+      display: none;
+      z-index: 3;
+    }
+
+    .ball{
+      display: none;
+    }
+
+
+  
+  }
+
+
+
+
+/*平板直*/
+  @media screen and (min-width: 768px) and (max-width: 991px){
+    
+      
+    /*問題集*/
+    .Qbox{
+      position: absolute;
+      top:20%;
+      left: 0;
+      right: -10%;
+      margin: 0 auto;
+      height: 10%;
+      z-index: 8;
+      width: 60%;
+    }
+    /*類型問題*/
+
+    .QtypeQ{
+      position: relative;
+      float: left;
+      top: 0;
+      z-index: 8;
+      width: 98%;
+      height: 55px;
+      margin: 0px auto 30px; 
+      border-top: 3px double rgba(255,255,255,0.5);
+      border-bottom: 3px double rgba(255,255,255,0.5);
+      font-size: 20px;
+      text-shadow:  0px 0px 10px rgba(35,91,72,0.8);
+      color: #fff;
+      line-height: 53px;
+
+    background: -webkit-linear-gradient(left, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(left, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff6060', endColorstr='#00ffffff',GradientType=1 );
+
+    }
+
+    .Qtypes{
+      cursor: pointer;
+      position: relative;
+      float: left;
+      top: 0;
+      z-index: 8;
+      width: 42%;
+      height: 55px;
+      margin: 12px;
+      border-radius: 5px;  
+      border: 3px double rgba(255,255,255,0.5);
+      background-color: rgba(41,175,213,0.2);
+      font-size: 20px;
+      text-shadow:  0px 0px 10px rgba(17,59,44,0.8);
+      color: #fff;
+      line-height: 53px;
+      transition: 0.5s;
+    }
+
+
+    /*平台問題*/
+
+    .QgameMom{
+      position: relative;
+      top: 35%;
+      left: 0%;
+      right: 0;
+      margin: 0 auto;
+      display: none;
+    }
+
+    .QgameMomQ{
+      position: relative;
+      float: left;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 8;
+      width: 98%;
+      height: 55px;
+      margin: 0px auto 30px; 
+      border-top: 3px double rgba(255,255,255,0.5);
+      border-bottom: 3px double rgba(255,255,255,0.5);
+      font-size: 20px;
+      text-shadow:  0px 0px 10px rgba(35,91,72,0.8);
+      color: #fff;
+      line-height: 53px;
+
+    background: -webkit-linear-gradient(left, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(left, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff6060', endColorstr='#00ffffff',GradientType=1 );
+
+    }
+
+    .QgameMoms{
+      cursor: pointer;
+      position: relative;
+      float: left;
+      top: 0;
+      z-index: 8;
+      width: 42%;
+      height: 55px;
+      margin: 12px;
+      border-radius: 5px;  
+      border: 3px double rgba(255,255,255,0.5);
+      background-color: rgba(41,175,213,0.2);
+      font-size: 20px;
+      text-shadow:  0px 0px 10px rgba(17,59,44,0.8);
+      color: #fff;
+      line-height: 53px;
+      transition: 0.5s;
+    }
+
+
+
+
+
+    /*商品小圖開始*/
+
+    .productLightbox{
+      position: absolute;
+      min-height: 270px;  
+      min-width: 250px;  
+      padding:3px; 
+      top: 28.5%;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      z-index: 5;
+      box-sizing: border-box;
+      cursor: pointer;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      display: none;
+    }
+    .productTitle{
+      background:rgba(255,255,255,0.3);
+      border:1px solid rgba(255,255,255,0.5);
+
+}
+    /*商品詳細內容*/
+
+    .productLightboxDetal{
+      position: absolute; 
+      height: 75%;
+      min-height: 270px;  
+      min-width: 250px; 
+      width:90%; 
+      padding:3px;
+      top: 13%; 
+      left: 0;
+      right: 0;
+      margin: 0 auto; 
+      z-index: 10;
+      border-radius: 8px;
+      box-sizing: border-box;
+      overflow: hidden;
+      display: none;
+
+      background:rgba(255,255,255,0.3);
+      box-shadow: 0px 0px 10px rgba(12,12,74,0.8019607843137255);
+      border: 1px solid rgba(255,255,255,0.8);
+    }
+
+    .productPaW{
+      width: 90%;
+      text-align: center;
+      padding-bottom: 50px;
+      padding-top: 30px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
+    /*對話框開始*/
+
+    .megamiContent{
+      width: 72%;
+      height: 25%;
+      position: absolute;
+      bottom: 60px;
+      left: 15%;
+      z-index: 4;
+      box-sizing: border-box;
+    }
+
+    .megamiSpeakperson{/*說話者 會員暱稱或預設角色*/
+      padding: 10px 50px 10px 30px;
+      font-size: 22px;
+      background-color: rgba(19, 52, 93, 0.6);
+      box-shadow: 0px 0px 50px rgba(255, 255, 187, 0.5);
+      position: absolute;
+      color: rgba(255, 255, 255, 0.6);
+      border: 6px double rgba(255,255,255,0.75);
+      border-radius: 8px 70px 8px 8px;
+      bottom: 100%;
+      left: -5px;  
+      box-sizing: border-box;
+    }
+
+    .megamiBottonBar{
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      width: 170px;
+      height: 50px;
+      cursor: pointer;
+      text-align: left;
+      background-color: rgba(19, 52, 93, 0.5);
+      box-shadow: 0px 0px 10px rgba(255, 255, 187, 0.5);
+      color: rgba(255, 255, 255, 0.8);
+      border: 1px solid #ABF6F0;
+      border-radius: 8px;
+      transition: 0.5s;
+      box-sizing: border-box;
+    }
+    .megamiBottonBar:hover {
+      background: rgba(86,189,156,0.6666666666666666);
+    }
+
+
+    .megamiNextBox{
+      font-size: 36px;
+      text-align: center;
+      line-height: 0px;
+      /*display: none;*/
+    }
+
+    .megamiNextBox .fa-caret-down{
+      padding: 6px 5px 3px;
+      display: inline-block;
+      vertical-align: middle;
+      color: rgba(255,255,255,0.8);
+
+    }
+
+    .megamiNextBotton{
+      font-size: 24px;
+      padding-bottom: 5px;  
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      color: rgba(255,255,255,0.8);
+    }
+
+
+
+    .megamiMoreagainBox{
+
+      font-size: 26px;
+      text-align: center;
+      line-height: 48px;
+      display: none;
+    }
+
+    .megamiMoreagainBox img{
+      width: 28px;
+      padding-bottom: 5px;
+      vertical-align: middle;
+      /*padding-right: 10px;*/
+    }
+
+    .megamiAgainBotton{
+      font-size: 24px;
+      padding-bottom: 5px;  
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      color: rgba(255,255,255,0.8);
+    }
+
+
+
+
+    .megamiContentbox{
+      width: 100%;
+      height: 70%;
+      border-radius: 10px;
+      background-color: rgba(19, 52, 93, 0.6);
+      box-shadow: 0px 0px 50px rgba(255, 255, 187, 0.5);
+      z-index: 2;
+      border: 6px double rgba(255,255,255,0.75);
+      position: absolute;
+      bottom: 0;
+      box-sizing: border-box;
+    }
+
+    .megamiContentword{/*對話內容*/
+      padding: 20px 30px;
+      text-align: left;
+      font-size: 28px;
+      color: #fff;
+      letter-spacing:  5px;
+      box-sizing: border-box;
+    }
+
+    /*對話框結束*/
+
+    .megami{/*女神父層*/
+      display: inline-block;
+      width: 100%;
+      vertical-align: top;
+      padding-top: 40px;
+      box-sizing: border-box;
+      margin: 0 auto;
+      z-index: 2  ;
+      display: none;
+    }
+
+    #megamiImg{/*女神本體*/
+      width: 105%;
+      transform: rotate(1.1deg);
+      box-sizing: border-box;
+    }
+
+
+   /*水晶球*/ 
+    .megamiBg{
+      width: 100%;
+      position: absolute;
+      top:30%;
+      left: 28%;
+      bottom: 0;
+      z-index: 3;
+      display: none;
+    }
+
+    .stage {
+      width: 350px;
+      height: 350px;
+      display: none;
+    }
+
+    .light{/*水晶球內的彩色光點*/
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 65%;
+      right: 0;
+      box-sizing: border-box;
+      /*display: none;*/
+      z-index: 3;
+      display: none;
+    }
+
+    .ball{
+      display: none;
+    }
+
+  
+  }
+
+
+
+
+
+
+
+
+
+/*平板橫*/
+  @media screen and (min-width: 992px) and (max-width: 1199px){
+
+      
+    /*問題集*/
+    .Qbox{
+      position: absolute;
+      top:13%;
+      left: 0;
+      right: -10%;
+      margin: 0 auto;
+      height: 10%;
+      z-index: 8;
+      width: 60%;
+    }
+    /*類型問題*/
+
+    .QtypeQ{
+      position: relative;
+      float: left;
+      top: 0;
+      z-index: 8;
+      width: 98%;
+      height: 55px;
+      margin: 0px auto 30px; 
+      border-top: 3px double rgba(255,255,255,0.5);
+      border-bottom: 3px double rgba(255,255,255,0.5);
+      font-size: 20px;
+      text-shadow:  0px 0px 10px rgba(35,91,72,0.8);
+      color: #fff;
+      line-height: 53px;
+
+    background: -webkit-linear-gradient(left, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(left, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff6060', endColorstr='#00ffffff',GradientType=1 );
+
+    }
+
+    .Qtypes{
+      cursor: pointer;
+      position: relative;
+      float: left;
+      top: 0;
+      z-index: 8;
+      width: 42%;
+      height: 55px;
+      margin: 10px 19px;
+      border-radius: 5px;  
+      border: 3px double rgba(255,255,255,0.5);
+      background-color: rgba(41,175,213,0.2);
+      font-size: 20px;
+      text-shadow:  0px 0px 10px rgba(17,59,44,0.8);
+      color: #fff;
+      line-height: 53px;
+      transition: 0.5s;
+    }
+
+
+    /*平台問題*/
+
+    .QgameMom{
+      position: relative;
+      top: 100%;
+      left: 0%;
+      right: 0;
+      margin: 0 auto;
+      display: none;
+    }
+
+    .QgameMomQ{
+      position: relative;
+      float: left;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 8;
+      width: 98%;
+      height: 55px;
+      margin: 0px auto 30px; 
+      border-top: 3px double rgba(255,255,255,0.5);
+      border-bottom: 3px double rgba(255,255,255,0.5);
+      font-size: 20px;
+      text-shadow:  0px 0px 10px rgba(35,91,72,0.8);
+      color: #fff;
+      line-height: 53px;
+
+    background: -webkit-linear-gradient(left, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(left, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right, rgba(255,96,96,0) 0%, rgba(255,255,255,0.3) 25%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff6060', endColorstr='#00ffffff',GradientType=1 );
+
+    }
+
+    .QgameMoms{
+      cursor: pointer;
+      position: relative;
+      float: left;
+      top: 0;
+      z-index: 8;
+      width: 42%;
+      height: 55px;
+      margin: 10px 19px;
+      border-radius: 5px;  
+      border: 3px double rgba(255,255,255,0.5);
+      background-color: rgba(41,175,213,0.2);
+      font-size: 20px;
+      text-shadow:  0px 0px 10px rgba(17,59,44,0.8);
+      color: #fff;
+      line-height: 53px;
+      transition: 0.5s;
+    }
+
+
+
+
+ 
+     /*商品小圖開始*/
+
+    .productLightbox{
+      position: absolute;
+      min-height: 270px;  
+      min-width: 200px;
+      padding:3px; 
+      top: 23.5%;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      z-index: 5;
+      box-sizing: border-box;
+      cursor: pointer;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      display: none;
+    }
+    .productTitle{
+      background:rgba(255,255,255,0.3);
+      border:1px solid rgba(255,255,255,0.5);
+
+}
+    /*商品詳細內容*/
+
+    .productLightboxDetal{
+      position: absolute; 
+      height: 75%;
+      min-height: 270px;  
+      min-width: 250px; 
+      width:80%; 
+      padding:3px;
+      top: 13%; 
+      left: 0;
+      right: 0;
+      margin: 0 auto; 
+      z-index: 10;
+      border-radius: 8px;
+      box-sizing: border-box;
+      overflow: hidden;
+      display: none;
+
+      background:rgba(255,255,255,0.3);
+      box-shadow: 0px 0px 10px rgba(12,12,74,0.8019607843137255);
+      border: 1px solid rgba(255,255,255,0.8);
+    }
+
+
+
+    /*對話框開始*/
+
+    .megamiContent{
+      width: 73%;
+      height: 30%;
+      position: absolute;
+      bottom: 30px;
+      left: 15%;
+      z-index: 4;
+      box-sizing: border-box;
+    }
+
+    .megamiSpeakperson{/*說話者 會員暱稱或預設角色*/
+      padding: 10px 50px 10px 30px;
+      font-size: 22px;
+      background-color: rgba(19, 52, 93, 0.6);
+      box-shadow: 0px 0px 50px rgba(255, 255, 187, 0.5);
+      position: absolute;
+      color: rgba(255, 255, 255, 0.6);
+      border: 6px double rgba(255,255,255,0.75);
+      border-radius: 8px 70px 8px 8px;
+      bottom: 100%;
+      left: -5px;  
+      box-sizing: border-box;
+    }
+
+    .megamiBottonBar{
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      width: 170px;
+      height: 50px;
+      cursor: pointer;
+      text-align: left;
+      background-color: rgba(19, 52, 93, 0.5);
+      box-shadow: 0px 0px 10px rgba(255, 255, 187, 0.5);
+      color: rgba(255, 255, 255, 0.8);
+      border: 1px solid #ABF6F0;
+      border-radius: 8px;
+      transition: 0.5s;
+      box-sizing: border-box;
+    }
+    .megamiBottonBar:hover {
+      background: rgba(86,189,156,0.6666666666666666);
+    }
+
+
+    .megamiNextBox{
+      font-size: 36px;
+      text-align: center;
+      line-height: 0px;
+      /*display: none;*/
+    }
+
+    .megamiNextBox .fa-caret-down{
+      padding: 6px 5px 3px;
+      display: inline-block;
+      vertical-align: middle;
+      color: rgba(255,255,255,0.8);
+
+    }
+
+    .megamiNextBotton{
+      font-size: 24px;
+      padding-bottom: 5px;  
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      color: rgba(255,255,255,0.8);
+    }
+
+
+
+    .megamiMoreagainBox{
+
+      font-size: 26px;
+      text-align: center;
+      line-height: 48px;
+      display: none;
+    }
+
+    .megamiMoreagainBox img{
+      width: 28px;
+      padding-bottom: 5px;
+      vertical-align: middle;
+      /*padding-right: 10px;*/
+    }
+
+    .megamiAgainBotton{
+      font-size: 24px;
+      padding-bottom: 5px;  
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      color: rgba(255,255,255,0.8);
+    }
+
+
+
+
+    .megamiContentbox{
+      width: 100%;
+      height: 70%;
+      border-radius: 10px;
+      background-color: rgba(19, 52, 93, 0.6);
+      box-shadow: 0px 0px 50px rgba(255, 255, 187, 0.5);
+      z-index: 2;
+      border: 6px double rgba(255,255,255,0.75);
+      position: absolute;
+      bottom: 0;
+      box-sizing: border-box;
+    }
+
+    .megamiContentword{/*對話內容*/
+      padding: 20px 30px;
+      text-align: left;
+      font-size: 28px;
+      color: #fff;
+      letter-spacing:  5px;
+      box-sizing: border-box;
+    }
+
+    /*對話框結束*/
+
+
+    .megami{/*女神父層*/
+      display: inline-block;
+      width: 100%;
+      vertical-align: top;
+      padding-top: 40px;
+      box-sizing: border-box;
+      margin: 0 auto;
+      z-index: 2  ;
+      display: none;
+    }
+
+    #megamiImg{/*女神本體*/
+      width: 105%;
+      transform: rotate(1.1deg);
+      box-sizing: border-box;
+    }
+
+
+
+     /*水晶球*/ 
+    .megamiBg{
+      width: 100%;
+      position: absolute;
+      top:12%;
+      left: 34%;
+      bottom: 0;
+      z-index: 3;
+
+      display: none;
+    }
+
+    .stage {
+      width: 360px;
+      height: 360px;
+
+      display: none;
+    }
+
+    .ball{
+
+      display: none;
+    }
+
+    .light{/*水晶球內的彩色光點*/
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 65%;
+      right: 0;
+      box-sizing: border-box;
+      /*display: none;*/
+      z-index: 3;
+
+      display: none;
+    }
+
+
+
+  }
+
+
+
+
+/*桌機*/
+
+
+ 
+
+
+  @media screen and (min-width:1200px) and (max-width: 1299px){
+ 
+    /*商品詳細內容*/
+
+    .productLightboxDetal{
+      position: absolute; 
+      height: 75%;
+      width:90%; 
+      padding:3px;
+      top: 13%; 
+      left: 0;
+      right: 0;
+      margin: 0 auto; 
+      z-index: 10;
+      border-radius: 8px;
+      box-sizing: border-box;
+      overflow: hidden;
+      display: none;
+
+      background:rgba(255,255,255,0.3);
+      box-shadow: 0px 0px 10px rgba(12,12,74,0.8019607843137255);
+      border: 1px solid rgba(255,255,255,0.8);
+    }
+
+    .productPaW{
+      width: 90%;
+      text-align: center;
+      padding-bottom: 50px;
+      padding-top: 30px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
+
+    /*水晶球相關開始*/
+
+    .megamiBg{
+      position: absolute;
+      top: 50%;
+      left: 48%;
+      bottom: 0;
+      /*display: none;*/
+    }
+        
+  }
+
+ 
+  @media screen and (min-width:1300px) and (max-width: 1749px){
+    
+    /*水晶球相關開始*/
+
+    .megamiBg{
+      position: absolute;
+      top: 50%;
+      left: 53%;
+      bottom: 0;
+      /*display: none;*/
+    }
+
+        
+  }
+  @media screen and (min-width:1750px){
+
+        
+  }
+
+ 
+       
+        
+

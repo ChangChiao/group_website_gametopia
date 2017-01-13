@@ -1,0 +1,704 @@
+	*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-family: "微軟正黑體","Exo 2",'Titillium Web',sans-serif;
+			/*outline: 1px solid #f00;*/
+	}
+
+
+/*======================================*/
+	body{
+		background-image:url(../images/pageMember.png);
+		background-attachment: fixed;
+		background-position:top center;
+		background-repeat: no-repeat;
+
+	}
+	.mz-bg-blur{ filter: brightness(.8) blur(5px); }
+
+	/*==============================*/
+
+	.mz-container img{
+			width: 100%;
+			height: auto;
+
+	}
+	
+	.mz-container div{
+		font-family: "微軟正黑體", "Helvetica Neue", Helvetica, sans-serif;
+	}
+	.mz-container{
+		width: 50%;
+		margin: auto;
+		min-height: 100vh;
+		margin-top:70px; 
+		position: relative;
+		box-shadow: 0px 0px 10px #999;
+		overflow: hidden;
+		background-color:rgba(255,255,255,.6);
+		box-shadow:0px 0px 10px rgba(0,0,0,.6); 
+		
+	}
+	.mz-title p{
+		font-size: 5rem;
+		text-align: right;
+		color:rgba(0,0,0,0);
+		opacity: .8;
+		letter-spacing:1rem; 
+		text-shadow:0 0 1px rgba(255,255,255,1);
+	}
+
+	.mz-member-info{
+		height: 200px;
+		position: relative;
+		z-index: 100;
+	}
+
+
+	.mz-member-cover{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 120%;
+		height:220px; 
+		/*background-image: url(../images/yidodo10800110002913.jpg);*/
+		filter: brightness(.6) blur(8px);
+		background-position:50% 30%;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.containCover{
+		width: 100%;
+		height: 200px;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+	}
+
+	#mz-mem-pic{
+		overflow: hidden;
+		height: 150px;
+		width: 150px;
+		border-radius: 50%;
+		margin-left: 6%;
+		border:3px solid #fff;
+		box-shadow:0px 0px 5px #999;
+		position: relative;  
+	}
+
+	#mz-mem-pic img{
+		width:150px;
+		height:150px;
+		object-fit: cover;
+		object-position: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+	}
+
+
+
+	.mz-mem-textInfo,#mz-mem-pic{
+		display: inline-block;
+		vertical-align: middle;
+		margin-top:45px; 
+		/*outline: 1px solid orange;*/
+		/*margin: auto;*/
+	}
+
+	.mz-mem-textInfo{
+		/*outline: 1px solid red;*/
+		position: relative;
+		top:-4vh; 
+		
+	}
+	#mz-mem-id{
+		padding:5vh 0; 
+		padding-left: 30px;
+		font-size: 1.5rem;
+		color: #ddd;
+		position: relative;
+		text-shadow:0px 0px 3px #999;
+		box-sizing: border-box; 
+		/*outline: 1px solid red;*/
+	}
+
+	#mz-mem-name{
+		padding-top: 0px;
+		padding-left: 30px;
+		font-size: 2rem;
+		color: #888;
+		/*outline: 1px solid green;*/
+	}
+/*＝＝＝＝＝＝＝＝＝標籤列表開始＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+	.mz-tab-all{
+		text-align: center;
+		font-size: 0;
+		position: relative;
+		z-index:100; 
+		top:120px;
+		
+	}
+
+	.mz-tab-all li{
+		display: inline-block;
+		vertical-align: middle;
+		
+		
+	}
+
+	.mz-tab-all li a{
+		font-size: 1.25rem;
+		font-weight: 500;
+		text-decoration: none;
+		color:#666;
+		padding:8px 20px; 
+		border-bottom: 2px solid #ccc;
+	}
+
+	.mz-tab-all li:first-child a{
+		/*border-bottom: 2px solid steelblue;*/
+	}
+
+	.mz-tab-all li a:hover{
+		border-bottom: 2px solid steelblue;
+	}
+
+	
+
+/*==============標籤內容開始================*/	
+	.mz-tab-content{
+		margin: auto;
+		width: 100%;
+		position: relative;
+		text-align: center;
+		font-size: 0;
+		padding-top:200px;
+		/*padding-left:8%;  */
+		padding-bottom:0px; 
+		box-sizing: border-box;
+
+
+	
+		
+	}
+	.mz-content{
+		margin: auto;
+		position: relative;
+		box-sizing: border-box;
+		
+	}
+
+
+
+	#mz-content2,#mz-content3{
+		width:80%; 
+		padding:0 0 200px 0; 
+		/*background-color:#fa0; */
+		font-size: 1rem;
+		top:0;
+		
+	}
+/*＝＝＝＝＝＝＝＝大頭照開始＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+	.mz-container button{
+		margin:10px 0; 
+	}
+
+	.mz-profile-pic{
+		padding-right: 30px;
+	}
+	.mz-profile-pic,.mz-profile{
+		margin: 0 auto;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.mz-self-pic{
+		width: 100px;
+		height: 100px;
+		overflow: hidden;
+		box-shadow: 0px 0px 5px #999;
+		
+	}
+
+	.mz-upload-pic{
+		font-size:0.8rem;
+		text-align: left;
+		color: #aaa;
+		text-align: center;
+		width: 100px;
+	}
+
+	.mz-upload-pic p{
+		line-height:1.5rem;
+	}
+
+/*================會員個人資料表格開始================================*/
+	#mz-content1{
+		width: 80%;
+		height:650px;
+		/*background-color:#0aa;  */
+	}
+	.mz-profile table tr td{
+		padding: 35px 20px 0px 0px;
+		font-size: 1.125rem;
+		color:#999;
+	}
+
+	.mz-profile table tr:last-child td{
+		padding: 35px 0px 0px 0px;
+		font-size: 1.125rem;
+		color:#999;
+	}
+    
+    .mz-container input[type="submit"]{
+    	background-color:#70a0af; 
+    	color:#fff;
+    	width: 70px;
+    	height: 30px;
+    	border-radius: 5px;
+    	padding: 0 10px;
+    	letter-spacing:3px; 
+    	text-align: center;
+    	font-size: 1rem;
+    	border: none;
+    }
+
+	 .mz-container input[type="reset"]{
+    	background-color:#8fc0a8; 
+    	color:#fff;
+    	width: 70px;
+    	height: 30px;
+    	border-radius: 5px;
+    	padding: 0 10px;
+    	letter-spacing:3px; 
+    	text-align: center;
+    	font-size: 1rem;
+    	border: none;
+
+    }
+
+    .mz-container input[type="submit"],.mz-container input[type="reset"]{
+     	margin: 30px 10px 0px 10px;
+    }
+
+    .mz-container input[type="text"]{
+    	outline: none;
+    	padding:3px 5px; 
+    }
+
+    .mz-container input[type="email"]{
+    	padding:3px 5px;
+    }
+	
+  	.mz-container input[type="password"]{
+    	padding:3px 5px;
+    }
+
+	
+	#mz-n-revise,#mz-e-revise,#mz-p-revise{
+		height: 20px;
+		width: 20px;
+		cursor: pointer;
+	}
+
+	/*====================大頭照=====================*/
+		.mz-self-pic{
+			max-height:100px;
+			max-width: 100px; 
+			overflow: hidden;
+			position: relative;
+		}
+
+		#previewImg{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			object-fit: cover;
+			object-position: center;
+			top: 0;
+			left: 0;
+		}
+	/*===============fake_file_input=======================*/
+		.fileUploadMem {
+			width: 100%;
+		    position: relative;
+		    overflow: hidden;
+		    margin: 10px 0;
+		    /*outline: 1px solid blue;*/
+		}
+		.fileUploadMem input#mz-self-img {
+		    position: absolute;
+		    top: 0;
+		    right: 0;
+		    margin: 0;
+		    padding: 0;
+		    font-size:1rem;
+		    cursor: pointer;
+		    opacity: 0;
+		    filter: alpha(opacity=0);
+		}
+
+		.fileUploadMem span{
+			width: 70px;
+			height: 20px;
+			display:inline-block;
+			text-align: center;
+			margin: 0 auto;
+			padding:5px 5px;
+			white-space: nowrap;
+			border-radius: 5px;
+			line-height: 20px;
+			font-size:14px;
+			letter-spacing:1px;
+			color:#fff;
+			background-color: rgba(49, 151, 97, 0.5);  
+			/*outline: 1px solid red; */
+		}
+
+		#uploadFileMem{
+			background-color: transparent;
+			padding-left:0;
+			margin-top:10px;
+			border:1px solid #ccc;
+			display: none;
+		}
+
+		#imgConfirm{
+			width: 80px;
+			/*height: 20px;*/
+			display:inline-block;
+			text-align: center;
+			margin: 10px auto;
+			padding:5px 5px;
+			white-space: nowrap;
+			border-radius: 5px;
+			line-height: 20px;
+			font-size:14px;
+			letter-spacing:1px;
+			color:#fff;
+			background-color: rgba(49, 163, 125, 0.8);  
+			/*outline: 1px solid red; */
+			border:none;
+
+		}
+
+/*===================查看訂單====================*/
+
+
+	#mz-content2 table{
+		box-shadow: 0px 0px 5px #999;
+		width: 100%;
+		margin: auto;
+		border-collapse: collapse; 
+	}
+	#mz-content3 table tr{
+		border:2px solid #666; 
+	}
+
+	#mz-content2 table tr th{
+		height: 30px;
+		font-size: 1rem;
+		color:#ddd;
+		background-color: #999;
+	}
+	#mz-content2 table tr td{
+		padding: 5px 10px 5px 10px;
+		font-size: 1rem;
+		color:#111;
+	}
+/*================我的二手=====================*/
+    
+
+	#mz-content3 table{
+		box-shadow: 0px 0px 5px #999;
+		width: 100%;
+		margin: auto; 
+		border-collapse: collapse; 
+	}
+
+
+	#mz-content3 table tr{
+		border:2px solid #666; 
+	}
+
+	#mz-content3 table tr th{
+		height: 30px;
+		font-size: 1rem;
+		color:#ddd;
+		background-color: #999;
+		border:1px solid #666
+	}
+
+	#mz-content3 table tr td{
+		padding: 5px 10px 5px 10px;
+		font-size: 1rem;
+		color:#111;
+
+	}
+	.mz-content3-pic{
+		display: inline-block;
+		width: 100px;
+		height: 100px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.mz-content3-pic img{
+		width: 100%;
+		height:auto;
+		position: absolute;
+		top: 0;
+		right: 0;	
+	}
+
+
+
+
+/*威昌追加*/
+.showOrderDetail{
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	display: none;
+}
+
+
+.infoContener{
+	width: 50vw;
+	height: 50vh;
+	overflow: scroll;
+	overflow-x: hidden;
+	border-radius: 5px;
+	background-color: rgba(255,255,255,.7);
+	position: fixed;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 101;
+	box-sizing: border-box;
+	/*padding: 0 10px;*/
+	box-shadow: 0px 0px 10px rgba(0,0,0,.6);
+}
+
+.infoContener > p{
+	text-align: center;
+	font-size:1.5rem;
+	color: #fff;
+	background-color:rgba(1,56,113,0.9); 
+	padding: 10px 0;
+	font-weight: 400;
+	letter-spacing:0.25rem; 
+}
+
+.orderTitle{
+	width: 100%;
+	background-color:rgba(1,26,113,0.5); 
+	text-align: center;
+	font-size: 0;
+}
+
+.orderTitle div{
+	display:inline-block;
+	box-sizing: border-box;
+	padding: 10px 0;
+	vertical-align:middle;
+	margin: 10px 0;
+	color: #fff;
+	font-size: 1.125rem;
+	letter-spacing:2px; 
+	/*outline: 1px solid #f00;*/
+}
+
+.orderTitle div:first-child{
+	width: 25%;
+	/*outline: 1px solid green;*/
+}
+
+.orderTitle div+div{
+	width: 25%;
+}
+
+.orderTitle div:nth-child(2){
+	width: 30%;
+}
+
+.orderTitle div:nth-child(4){
+	width: 20%;
+}
+
+.orderInfo{
+	width: 100%;
+	box-sizing: border-box;
+	/*outline: 1px solid #fa0;*/
+	text-align: center;
+	font-size: 0;
+	padding:0 10px; 
+	margin: 10px 0;
+}
+
+.orderInfo div:first-child{
+	display: inline-block;
+	vertical-align: middle;
+	outline: 1px solid steelblue;
+	font-size: 1rem;
+	width: 25%;
+	height:150px;
+	overflow: hidden;
+	position: relative;
+	/*background-color:blue; */
+}
+
+.orderInfo div:first-child img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+
+.orderInfo div + div{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1rem;
+	letter-spacing: 1px;
+}
+
+
+.orderInfo div:nth-child(2){
+	/*background-color: orange;*/
+	width: 30%;
+}
+.orderInfo div:nth-child(3){
+	/*background-color: #f00;*/
+	width: 25%;
+}
+
+.orderInfo div:nth-child(4){
+	/*background-color: #aaa;*/
+	width: 20%;
+}
+
+
+
+
+.close_btn{
+	position: absolute;
+	top:5px;
+	right: 13px;
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+}
+
+.close_btn img{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: 0;
+	left: 0;
+}
+
+
+/*==================rwd=======================*/
+/*手機*/
+    @media screen and (max-width:767px){
+        
+      
+      .mz-title p{font-size:3.5rem;}  
+      #mz-mem-id{
+		/*padding-top:80px;*/
+		font-size:1.25rem;
+      }  
+        
+	  #mz-mem-name{
+		/*padding-top:0px;*/
+		font-size:1.25rem;
+	  }
+       
+      #mz-mem-pic{
+      	height: 100px;
+      	width: 100px;
+      } 
+		
+	  #mz-mem-pic img{
+      	height: 100px;
+      	width: 100px;
+      } 		
+      .mz-tab-all li a{
+      	font-size:1rem;
+      }
+      .mz-container{
+      	width: 100%;
+      }
+
+      .mz-tab-content{
+      	padding-left: 0;
+      }
+	  #mz-content1{
+		/*padding-left:10%; */
+	  }	
+	  #mz-content2,#mz-content3{
+	  	width: 95vw;
+	  	overflow: scroll;
+	  	overflow-y: hidden;
+	  }
+
+	  #mz-mem-id {top:0px; margin-bottom:10px;}
+	  .infoContener{width: 90vw;}
+	  .orderInfo div:first-child{height: 100px;}
+	  .mz-mem-textInfo{top:0;}
+
+    }
+
+    /*平板直*/
+    @media screen and (min-width: 768px) and (max-width: 991px){
+        
+      .mz-container{width: 100%;}  
+        /*body{background: pink;}*/
+      .mz-title p{font-size:3rem;}
+      
+  		#mz-mem-pic{
+      	height: 120px;
+      	width: 120px;
+      }
+		.mz-mem-textInfo{padding-top:80px;}
+		.infoContener{width: 90vw;}
+		.orderInfo div:first-child{height: 200px;}
+		.mz-mem-textInfo{top:-7vh;}
+    }
+
+    /*平板橫*/
+    @media screen and (min-width: 992px) and (max-width: 1199px){
+       
+       
+        
+		/*body{background:#0af;}*/
+		.mz-container{width:970px;}
+		.mz-title p{font-size:2.5rem;}
+	    /*body{background-color:pink;}*/
+        .mz-mem-textInfo{top:2vh;}
+
+
+    }
+    
+  /*桌機*/
+    @media screen and (min-width:1200px){
+        
+        .mz-container{width:1170px;}
+        /*body{background:#0aa;}*/
+  		.mz-mem-textInfo{top:-4vh;}
+        
+    }

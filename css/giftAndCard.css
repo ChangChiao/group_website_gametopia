@@ -1,0 +1,1099 @@
+/*html {
+      height: 100%;
+    }*/
+body {
+  padding: 0;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+.wrapper {
+  height: 100% !important;
+  height: 100%;
+  margin: 0 auto; 
+  overflow: hidden;  
+}    
+a {
+  text-decoration: none;
+}
+.pointer {
+  color: #9b59b6;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  margin-top: 15px;
+}
+.main {
+  width: 100%;
+  margin: 0 auto;
+}
+.btn {
+  color: rgb(255, 255, 255);
+  background: #6B92B1;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  display: inline-block;
+  line-height: 100%;
+  padding: 0.8em;
+  text-decoration: none;
+  color: #fff;
+  width: 130px;
+  line-height: 140%;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid rgba(255,255,255,0.6);
+  box-shadow: 0px 0px 8px rgba(22,35,69,0.5);
+}
+/*.nextStep .btn{
+  width: 150px;
+  color: rgb(255, 255, 255);
+  background: hsla(210, 50%, 60%, 1);
+}*/
+.clear {
+  width: auto;
+}
+.btn:hover{
+  background: #D65476;
+  transition: .6s;
+}
+.page_container {
+  z-index: -1;
+  margin: auto;
+  /*width: 80%;*/
+  height: 100%;
+  background-color: #fff;
+  /*box-shadow: 3px 3px 2px rgba(0,0,0,.2);*/
+  background-image: url("../images/pageShoppingmall.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  padding-top: 80px;
+  /*padding-bottom: 50px;*/
+}
+.main section.page3 .page_container {
+overflow: hidden;
+}
+.main section.page3{
+/*background-color: rgba(20, 255, 100, .5);*/
+}
+.main section.page4 .page_container {
+overflow: hidden;
+}
+.main section.page4{
+/*background-color: rgba(0, 120, 210, .5);*/
+}
+.main section.page5 .page_container {
+overflow: hidden;
+}
+.main section.page5{
+/*background-color: rgba(0, 150, 150, .4);*/
+}
+.main section.page6 .page_container {
+overflow: hidden;
+}
+.main section.page6{
+/*background-color: rgba(255, 223, 229, .6);*/
+}   */    
+
+#menu{
+  position:fixed;
+  height: 40px;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin:0;
+  width: 200px;
+}
+#dragRolePosition{
+  position: absolute;
+
+}
+#menu span{
+  display: inline-block;
+}
+#menu img{
+  width: 70%;
+  height: auto;
+}
+#menu li {
+  margin: 10px;
+  color: #000;
+  width: 200px;
+  background:#fff;
+  background: rgba(255,255,255, 0.5);
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+}
+#menu li.active{
+  background: rgba(102, 153, 204, .7);
+  color: #fff;  
+}
+#menu li a{
+  display: inline-block;
+  text-decoration:none;
+  color: #000;
+}
+#menu li.active a:hover{
+  color: #000;
+}
+#menu li:hover{
+  background: rgba(255,255,255, 0.8);
+
+}
+#menu li a,
+#menu li.active a{
+  padding: 7px;
+  display: inline-block; 
+}
+#menu li.active a{
+  color: #fff;
+}
+
+/*=================頁面版面開始=====================*/
+*{
+  margin: 0;
+  padding: 0;
+  list-style:none;
+  vertical-align: middle;
+  font-family: "微軟正黑體";
+  /*outline: 1px solid red;*/
+}
+.wrapper{
+  /*background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;*/
+  /*background-color: #A4FFC6;*/
+}
+.leftCol{
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+  /*width: 400px;*/
+  /*margin: 40px 20px;*/
+}
+/*.leftCol:before{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 150px;
+}*/
+.floater {
+  float:left;
+  height:50%;
+  margin-bottom:-310px;
+  width: 1px;
+}
+.floater1 {
+  float:left;
+  height:50%;
+  margin-bottom:-280px;
+  width: 1px;
+}
+.floater2 {
+  float:left;
+  height:50%;
+  margin-bottom:-420px;
+  width: 1px;
+}
+.floater3 {
+  float:left;
+  height:50%;
+  margin-bottom:-600px;
+  width: 1px;
+}
+.leftCol2{
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+  /*height: 520px;*/
+  /*margin: 40px 20px;*/
+}
+.leftCol2:before{
+  content: "";
+  height: 60px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.combine{
+  position: relative;
+  clear: both;
+  height: 450px;
+}
+.combine1{
+  position: relative;
+  clear: both;
+  height: 730px;
+}
+.role{
+  /*position: relative;*/
+  text-align: center;
+  /*display: inline-block;*/
+  margin: auto;  
+  /*z-index: 2;*/
+  background-color: rgba(255,255,255,0.7);
+  border: 5px solid #FDCD77; 
+  border-radius: 3%;
+  width: 363px;
+  height: 495px;
+  clear:both;
+  position:relative;
+  padding: 10px;
+  box-shadow: 0px 0px 8px rgba(22,35,69,0.6);
+}
+.roleImgbox{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.role img{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+#diamond{
+  width: 10%;
+  height: auto;
+  float: left;
+  margin-left: 45px;
+  opacity: .6;
+}
+.giveGift{
+  display: block;
+  padding: 25px 0;
+}
+#femaleHead{
+  display: none;
+}
+#maleHead{
+  display: none;
+}
+.rightCol{
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+  width: 50%; 
+}
+.rightCol2{
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+  /*height: 520px; */
+  /*margin: 40px 20px;*/
+}
+.question{
+  margin: auto;
+  width: 70%;
+}
+.question p{
+  line-height: 100px;
+  font-size: 40px;
+  color: #000;
+  border-bottom: 2px solid #d7becb;
+}
+.option{
+
+}
+.options1{
+  display: inline-block;
+}
+.option2{      
+text-align: center;
+display: inline-block;
+margin: auto;
+
+}
+.page1Text{
+  font-size: 28px;
+  text-shadow: 2px 1px 5px rgba(255, 255, 255, 0.2);
+  color: #000;
+  margin: auto;
+  padding-top: 50px;
+}
+.page1Text p{
+padding-top: 10px;
+}
+.explanation{
+  font-size: 20px;
+  display: inline-block;
+  background-color: #fff;
+  width: 50%;
+  height: 50%;  
+  border-radius: 8px;
+  opacity: .7;
+  box-shadow: 0px 0px 8px rgba(0,0,0,.2);
+  border: 1px solid #eee;
+  margin-top: 45px;
+}
+.explanationInside{
+  padding: 20px 25px;
+}
+#expTitle{
+/*margin-top: 140px;*/
+font-weight: bold;
+}
+#expText{
+font-size: 18px;
+text-align: left;
+}
+#expStep{
+  display: inline-block;
+  font-size: 1px;
+}
+#expStep p{
+  padding: 5px 0;
+}
+.stepTitle{
+  margin-top: 25px;
+}
+.stepIcon img{
+  height: 40%;
+  width: 40%;
+}
+.stepDescribe{
+  display: inline-block;
+  
+  background-color: rgba(253, 205, 119, .5);
+  border-radius: 8px;
+  margin: 5px 8px;
+  font-size: 18px;
+}
+
+.roleText{
+  background-color: #6B92B1;
+  font-size: 18px;
+  padding: 0.5em;
+  width: 50%;
+  border-radius: 7px;
+  margin: 20px auto;
+  color: #fff;
+}
+/*.roleText p{
+  padding-top: 7px;
+}*/
+.card{
+  position: relative;
+  display: inline-block;
+  /*background: url(../images/card.png);*/
+  background-color: #ccc;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 10px 20px;
+  width: 310px;
+  height: 437px;
+  box-shadow: 3px 3px 2px rgba(0,0,0,.2);
+}
+.card img{
+  width: 100%;
+  height: auto;
+}
+.cardStyle{
+  display: inline-block;
+  margin: auto;
+  /*height: 140px;*/
+}
+.style1{
+  margin: 10px 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+.style1 img{
+  width: 62px;
+  height: 88px;
+}
+.style2{
+  margin: 10px 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+.style2 img{
+  width: 62px;
+  height: 88px;
+}
+.style3{
+  margin: 10px 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+.style3 img{
+  width: 62px;
+  height: 88px;
+}
+.style4{
+  margin: 10px 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+.style4 img{
+  width: 62px;
+  height: 88px;
+}
+.style5{
+  margin: 10px 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+.style5 img{
+  width: 62px;
+  height: 88px;
+}
+.style6{
+  margin: 10px 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+.style6 img{
+  width: 62px;
+  height: 88px;
+}
+ .cardDeco{
+  margin: 8px 0;
+}
+.confirm .btn{
+margin-top: 15px;
+}
+.confirm{
+  width: 100%;
+}
+.proTitle{
+  color: #000;
+  font-size: 18px;
+}
+.preTitle{
+  font-size: 20px;
+  color: #000;
+}
+.cardText input[type="textarea"]{
+  width: 55%;
+  height: 70px;
+  background-color: rgba(253,205,130,.4);
+  font-size: 15px;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0px 0px 8px rgba(0,0,0,.2);
+  border: none;
+}
+::-webkit-input-placeholder{
+  color: rgba(0, 0, 0, .6);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(0, 0, 0, .6);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(0, 0, 0, .6);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(0, 0, 0, .6);
+}
+.cardPreview{
+  margin: auto;
+}
+#roleFinal{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  /*border: 3px dotted #ccc;
+  border-radius: 8px;*/
+  /*opacity: 0;*/
+  /*transition: .3s;*/
+}
+.card:hover #roleFinal{
+  /*opacity: 1;*/
+  /*transition: .5s;*/
+}
+#roleFinal p{
+  padding-top: 45px;
+  color: #ddd;
+}
+#roleFinal img{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.page5Text{
+  font-size: 28px;
+  color: #000;
+}
+.page5Text p{
+  margin: 8px 0;
+}
+.resultTitle{
+  font-size: 28px;
+  /*font-weight: bold;*/
+  color: #000;
+}
+.singlePro{
+  display: inline-block;
+  text-align: center;
+}
+.proRecommend{
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 8px;
+  opacity: .7;
+  box-shadow: 0px 0px 8px rgba(0,0,0,.2);
+  border: 1px solid #eee;
+}
+.proRow{
+  margin: auto;
+  /*text-align: center;*/
+  /*height: 280px;*/
+}
+.proPic{
+  text-align: center;
+  box-shadow: 3px 3px 2px rgba(0,0,0,.2);
+  opacity: 1;
+  transition: .6s;
+  box-shadow: 0px 0px 8px rgba(22,35,69,0.5);
+}
+.proPic:hover{
+opacity: .75;
+cursor: pointer;
+}
+.proPic img{
+width: 140px;
+height: 170px;
+}
+.proMore{
+  display: block;
+  margin-top: 25px;
+}
+/*=================頁面版面結束=====================*/
+
+
+/*=======================手機RWD設定開始=================*/
+@media screen and (max-width: 767px){
+  .page_container{
+    padding-top: 20px;
+  }
+  .leftCol{
+    display: block;
+    width: 40%;
+    height: auto;
+    margin: auto;
+    padding-top: 75px;
+  }
+  .leftCol2:before{
+    height: 5px;
+  }
+  .rightCol{
+    width: 100%;    
+    height: auto;
+  }
+  .rightCol2{
+    width: 80%;
+    height: auto;
+  }
+  .question{
+    width: 60%;
+  }
+  .question p{
+    font-size: 20px;
+    line-height: 50px;
+  }
+  #diamond{
+    height: 10%;
+    margin-left: 40px;
+  }
+  .combine{
+    margin-top: 50px;
+  }
+  .options1{
+    margin-top: 80px;
+  }
+  .options2{
+    margin-top: 25px;
+  }
+  #category_1,#category_2,#category_3,#category_4,#category_5,#category_6,#category_7,#category_8{
+    margin: 3px;
+    padding: 0.4em;
+  }
+  .explanationInside{
+    padding: 15px 25px;
+  }
+  .card{
+    position: relative;
+    display: block;
+    width: 20%;
+    height: auto;
+    margin: auto;
+  }
+  .style1,.style2,.style3,.style4,.style5,.style6{
+    margin: 0;
+  }
+  .question1{
+    padding-top: 20px;
+  }  
+  .page1Text{
+    display: block;
+    font-size: 25px;
+    padding-top: 100px;
+    margin: auto;
+  }  
+  .page5Text{
+    font-size: 18px;
+  }
+  .explanation{
+    margin-top: 60px;
+    height: 45%;
+    width: 90%;
+  }
+  .role{
+    display: block;
+    width: 75%;
+    height: 80%;
+  }
+  .role img{
+    width: 100%;
+    height: 100%;
+  }
+  .preTitle{
+    visibility: hidden;
+  }
+  .singlePro{
+    display: inline-block;
+    width: 60%;
+  }
+  .proPic{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 100%;
+    position: relative;
+  }
+  .singlePro img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .proRow1{
+    width: 45%;
+    display: inline-block;
+    margin: auto;
+  }
+  .proRow2{
+    width: 45%;
+    display: inline-block;
+    margin: auto;
+  }
+  .proRecommend{
+    width: 80%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+  }
+  .cardText{
+    width: 100%;
+  }
+  .cardText textarea{
+    width: 80%;
+  }
+  .roleText{
+    width: 90%;
+  }
+  .resultTitle{
+    padding-top: 80px;
+  }
+  #expTitle{
+    padding: 10px 0;
+  }
+  #expText{
+    padding: 22px 40px;
+  }
+  .stepIcon{
+    margin-top: 6px;
+  }
+  .stepTitle{
+    margin-top: 18px;
+  }
+  .stepDescribe{
+    padding: 5px 4px;
+    margin: 2px 2px;
+    font-size: 15px;
+  }
+  #expStep p{
+    padding: 5px 0;
+  }
+  #menu li {
+    margin: 10px;
+    text-align: center;
+    color: #000;
+    width: 150px;
+    background:#fff;
+    background: rgba(255,255,255, 0.5);
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+  }
+  #menu{
+    position: absolute;
+    text-align: center;
+    top: 550px;
+    right: -645px;
+    z-index: 70;
+    width: 100%;
+    transition: .3s;
+    overflow: hidden;
+  }
+  #menu:hover{
+    right: -550px;
+    transition: .5s;  
+  }  
+}
+
+@media screen (min-width: 472px) and (max-width: 555px){
+    #menu{
+      position: absolute;
+      text-align: center;
+      top: 400px;
+      right: -525px;
+      z-index: 70;
+      width: 100%;
+      transition: .3s;
+    }
+    #menu:hover{
+      right: -400px;
+      transition: .5s;  
+    }
+  }
+/*=======================手機RWD設定結束=================*/
+
+
+/*=======================平板直式RWD設定開始=================*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .page_container{
+    height: 100%;
+    padding-top: 80px;
+  } 
+  #page_container1,#page_container2,#page_container3{
+    padding-top: 200px;
+  }
+  .leftCol{
+    width: 38%;
+    height: auto;
+    margin-top: 15px;
+  }
+  .leftCol2{
+    display: block;
+    width: 40%;
+    height: auto;
+    margin: auto;
+  }
+  .leftCol2:before{
+    height: 0;
+  }
+  .rightCol{
+    height: 50%;
+    width: 70%;
+  }
+  .role{
+    width: 50%;
+    height: auto;
+  }
+  .question p{
+    font-size: 28px;
+  }
+  .floater{
+    margin-bottom: -168px;
+  }
+  .page1Text{
+    width: 100%;
+  }
+  .page5Text{font-size: 18px;}    
+  .explanation{
+    margin-top: 80px;
+    width: 65%;
+    height: 350px;
+  }
+  #expTitle{padding: 10px 0;}
+  #expText{
+    padding: 25px 52px;
+  }
+  #expStep{
+    width: 100%;
+  }
+  #category_1,#category_2,#category_3,#category_4,#category_5,#category_6,#category_7,#category_8{
+    margin: 3px;
+    padding: 0.4em;
+  }
+  .stepDescribe{
+    width: 20%;
+  }
+  .stepTitle{
+    font-size: 13px;
+  }
+  .stepIcon{
+    margin-top: 6px;
+  }
+  .combine{
+    height: 365px;
+  }
+  .options1{
+    padding-top: 50px;
+  }
+  .options2{
+    padding-top: 30px;
+  }
+  .option{
+    padding-left: 70px;
+    width: 77%;
+  }
+  .question{
+    width: 78%;
+  }
+  .card{
+    display: inline-block;
+    width: 25%;
+    height: auto;
+  }
+  .singlePro{
+    margin: 6px;
+  }
+  .proRow1{
+    display: inline-block;
+    width: 80%;
+  }
+  .proRow2{
+    display: inline-block;
+    width: 80%;
+  }
+  .proMore{display: block; margin: 0 auto; width: 120px;}
+  .resultTitle{
+    font-size: 24px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .preTitle{
+    visibility: hidden;
+  }
+  .proRecommend{
+    width: 95%;
+    padding: 40px 0;
+  }
+  .proTitle{
+    margin: 5px 0;
+  }
+  .cardStyle{
+    width: 50%;
+    height: auto;
+  }
+  .cardText textarea{
+    width: 50%;
+    height: auto;
+  }
+
+  #menu li {
+    margin: 10px;
+    text-align: center;
+    color: #000;
+    width: 150px;
+    background:#fff;
+    background: rgba(255,255,255, 0.5);
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+  }
+  #menu:hover{
+    right: -800px;
+    transition: .5s;
+  }
+  #menu{
+    /*display: none;*/
+    position:absolute;
+    text-align: center;
+    top: 500px;
+    right: -896px;
+    z-index: 70;
+    width: 100%;
+    transition: .3s;
+  }
+
+}
+/*=======================平板直式RWD設定結束=================*/
+
+
+/*=======================平板橫式RWD設定開始=================*/
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  .explanation{
+    margin-top: 50px;
+    width: 65%;
+    height: auto;
+  }
+  .leftCol2{width: 35%;}
+  .rightCol2{width: 50%;}
+  .rightCol{width: 60%; margin: auto;}
+  .leftCol:before{height: 150px;}
+  .leftCol{width: 35%; margin: auto;}
+  /*.card{width: 60%; height: 300px;}*/
+  .cardStyle{
+    width: 30%;
+  }
+  .role{
+    width: 85%;
+    height: auto;
+  }
+  .cardText input[type="textarea"]{
+    width: 70%;
+    height: 70px;
+  }
+  .options1{margin-top: 200px;}
+  .options2{
+    margin-top: 50px;
+    width: 70%;
+    margin-left: 100px;
+  }
+  .cardText textarea{width: 350px;}
+  .roleText{width: 60%;}
+  .singlePro{margin: 15px 10px;}
+  .page1Text{
+    padding-top: 70px;
+  }
+  .floater2{
+    margin-bottom: -350px;
+  }
+  #expTitle{margin-top: 30px;}
+  #expText{margin: 30px 40px;}
+  .stepDescribe{
+    margin: 0 0;
+    padding: 10px;
+  }
+  .resultTitle{
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  #category_1,#category_2,#category_3,#category_4,#category_5,#category_6,#category_7,#category_8{
+    margin: 10px;
+    padding: 0.4em;
+  }
+  #expStep p{padding-top: 10px;}
+  #menu li {
+    float: left;    
+    margin: 6px;
+    text-align: center;
+    color: #000;
+    width: 150px;
+    background:#fff;
+    background: rgba(255,255,255, 0.7);
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+  }  
+  #menu{
+    position:fixed;
+    text-align: center;
+    top: 75px;
+    left: 25px;
+    height: 40px;
+    z-index: 70;
+    padding: 0;
+    margin: auto;    
+    width: 100%;
+  }
+}
+
+/*=======================平板橫式RWD設定結束=================*/
+
+
+/*===================桌機RWD設定開始===================*/
+@media screen and (min-width: 1200px){
+  .page_container{
+    width: 100%;
+  }
+  .rightCol2{
+    width: 50%;
+  }
+  .leftCol2{
+    /*width: 35%;*/
+  }
+  .resultTitle{
+    padding: 40px 0;
+  }
+  .cardStyle{
+    width: 28%;
+  }
+  .singlePro{
+    margin: 20px 20px;
+  }
+  .proPic img{
+    width: 150px;
+    height: 180px;
+  }
+  .options1{
+    padding-top: 200px;
+    width: 100%;
+  }
+  .options2{
+    padding-top: 180px;
+    width: 100%;
+  }
+  .proTitle{
+    margin: 10px 0;
+  }
+  #expText{
+    margin: 38px 70px;
+  }
+  #expStep{
+    padding-top: 50px;
+  }
+  .stepDescribe{
+    padding: 11px 6px;
+  }
+  .explanationInside{
+    padding: 45px 20px;
+  }
+  #menu li {
+    float: left;
+    margin: 10px;
+    color: #000;
+    width: 150px;
+    background:#fff;
+    background: rgba(255,255,255, 0.5);
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+  }  
+  #menu{
+    position:fixed;
+    top: 400px;
+    right: 0;
+    height: 100%;
+    z-index: 70;
+    padding: 0;
+    margin:0;
+    width: 165px;
+  }
+}
+/*===================桌機RWD設定結束===================*/
+
+
+
+/*#snowflakeContainer {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0;
+  right: 0;
+  background-color: #2c3e50;
+}
+
+.snowflake {
+    padding-left: 15px;
+    font-family: Cambria, Georgia, serif;
+    font-size: 14px;
+    line-height: 24px;
+    position: fixed;
+    color: #00f;
+    user-select: none;
+    z-index: 1000;
+}
+.snowflake:hover {
+    cursor: default;
+}*/
+

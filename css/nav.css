@@ -1,0 +1,459 @@
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			/*outline: 1px solid #f00;*/
+		}
+
+/*====================CURSOR==========================*/
+	#cart_desk_img,#cart_login_btn,#mail_login_btn{
+		cursor: pointer;
+	}
+/*=================會員狀態====================*/
+		.bs-member-zone img{
+			width: 100%;
+			height: auto;
+		}
+		.desk-bs{
+			position: fixed;
+			top: 0;
+			text-align: center;
+			font-size: 0;
+			float: right;
+			z-index:999; 
+			top: 0;
+			right: 0;
+		}
+
+		.mobile-bs,.m-bs-lo-member-zone{
+			position: fixed;
+			box-sizing: border-box;
+			padding-top:15px; 
+			height: 70px;
+			top: 0;
+			text-align: center;
+			font-size: 0;
+			float: right;
+			z-index:999; 
+			top: 0;
+			right: 0;
+			/*background-color: green;*/
+		}
+
+		.mobile-bs img,.m-bs-lo-member-zone img{			
+			vertical-align: middle;
+			height: 40px;
+			width: 40px;
+			opacity: .6;
+		}
+
+		.bs-member{
+			display: inline-block;
+			vertical-align: top;
+			/*padding:0  8px;*/
+		}
+
+		.bs-member img{
+			height: 22px;
+			width: 22px;
+			opacity: .6;
+		}
+
+		.bs-member a{
+			font-size: 0.8rem;
+			letter-spacing:1px; 
+			display: block;
+			text-decoration: none;
+			color:#666;
+			margin-right:10px; 
+		}
+
+		.bs-member a,.bs-member img{
+			display: inline-block;
+			vertical-align:middle;
+
+		}
+
+		.close{
+			height: 30px;
+			width: 30px;
+		}
+
+		.close img{
+			width: 100%;
+			height: auto;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+
+		.mask ,.m-mask{
+			width: 100%;
+			height: 100%;
+			background-color:rgba(0,0,0,.5); 
+			position: fixed;
+			top: 0;
+			left: 0;
+			opacity:.5;
+			/*z-index: -1;*/
+			transition: .5s;
+			z-index: 999;
+			/*display: none;*/
+		}
+
+		#bs-lightbox1,#m-bs-lightbox1{
+			background-image: url(../images/pageBacks.png);
+			background-position:  center;
+			background-repeat: no-repeat; 
+		}
+	
+		#bs-lightbox2,#m-bs-lightbox2{
+			background-image: url(../images/pageGift.png);
+			background-position: top center;
+			background-size:cover;
+			background-repeat: no-repeat; 
+		}
+
+
+		.bs-lightbox{
+			/*display: none;*/
+			text-align: left;
+			color: #666;
+			height:0;
+			width: 400px;
+			margin: auto;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			position: fixed;
+			overflow: hidden;
+			transition: .5s;
+			box-shadow:0px 0px 10px rgba(0,0,0,.6);
+			/*background-color:rgba(0,200,200,.9);  */
+			border-radius:10px; 
+			box-sizing: border-box;
+			z-index: 999;
+		}
+
+		#bs-lightbox2{
+			/*padding-top:20px; */
+			z-index: 10;
+		}
+
+		.bs-content{
+			margin: 0 auto;
+			/*width: 80%;*/
+			text-align: center;
+			font-size: 1.5rem;
+			box-sizing: border-box;
+		}
+
+		.bs-content table{
+			width: 100%;
+			margin:0 auto;
+			padding-top: 20px;
+		}
+
+		.adjust{
+			width: 30%;
+			/*soutline: 1px solid red;*/
+		}
+
+		.bs-content table tr td{
+			padding:10px;
+			/*outline: 1px solid red;*/
+		}
+
+		.bs-content h3{
+			font-size: 2.5rem;
+			letter-spacing:0.25em; 
+
+		}
+		.bs-content h4{
+			font-size: 1.5rem;
+			letter-spacing: 0.2rem;
+			font-weight: 200;
+			margin:2px 0; 
+		}
+/*================uploadimage===================*/
+		.img_preview{
+			position: relative;
+			height:100px;
+			width: 100px; 
+			overflow: hidden;
+			margin: 5px auto;
+		}
+		.preview{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			object-position: center;
+			object-fit: cover;
+			top: 0;
+			left: 0;
+		}
+/*=================fake_file_input=======================*/
+		.fileUpload {
+			width: 100%;
+		    position: relative;
+		    overflow: hidden;
+		    margin: 10px 0;
+		    /*outline: 1px solid blue;*/
+		}
+		.fileUpload input.myFile {
+		    position: absolute;
+		    top: 0;
+		    right: 0;
+		    margin: 0;
+		    padding: 0;
+		    font-size:1rem;
+		    cursor: pointer;
+		    opacity: 0;
+		    filter: alpha(opacity=0);
+		}
+
+		.fileUpload span{
+			width: 100px;
+			/*height: 20px;*/
+			display: block;
+			text-align: center;
+			margin: 0 auto;
+			white-space: nowrap;
+			border-radius: 5px;
+			padding:10px 0px;
+			line-height: 20px;
+			font-size:1rem;
+			letter-spacing:1px;
+			color:#fff;
+			background-color: rgba(49, 163, 125, 0.8);  
+			/*outline: 1px solid red; */
+		}
+
+		#uploadFile{
+			background-color: transparent;
+			padding-left:0;
+		}
+
+		.bs-content label{
+			font-size: 1.25rem;
+			letter-spacing:0.1rem; 
+		}
+
+		label[for=memPsw-confirm]{
+			position: relative;
+			left:-22px;
+		}
+
+		input[id="memPsw-confirm"]{
+			position: relative;
+			left:-22px;
+		}
+
+		.bs-content a{
+			font-size: 1.125rem;
+			text-decoration: none;
+			letter-spacing:0.25rem;
+			color: #666;
+		}
+
+		#trans-to-signup{
+			display: block;
+			text-align: center;
+			margin:10px 0; 
+		}
+
+		.close{
+			z-index:10; 
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin: 10px;
+			font-size: 1.5rem;
+			cursor: pointer;
+		}
+
+		.bs-content input[type="submit"]{
+			width: 80%;
+			height: 35px;
+			border-radius: 5px;
+			color: #fff;
+			background:#70a0af;
+			font-size: 1.5rem;
+			letter-spacing:0.25rem; 
+			border: none;
+			cursor: pointer;
+		}
+
+		.adjust label, .adjust input{
+			vertical-align: middle;
+		}
+		.adjust input{
+			margin-left: 10px;
+			padding-left: 10px;
+			height: 30px;
+			font-size: 15px;
+		}
+
+		.adjust #uploadFile{
+			padding-left:0px;
+			margin-left:0px;
+		}
+		/*＝＝＝＝＝＝＝＝＝登入後＝＝＝＝＝＝＝＝＝＝*/
+
+		.bs-lo-member-zone{
+			position: fixed;
+			top: 0;
+			text-align: center;
+			font-size: 0;
+			float: right;
+			z-index:999; 
+			top: 0;
+			right: 0;
+			margin:0 10px; 
+
+		}	
+
+		.bs-lo-member img{
+			height: 22px;
+			width: 22px;
+			opacity: .6;
+		}
+
+
+		.bs-lo-member{
+			display: inline-block;
+			vertical-align: top;
+			/*padding:0  8px;*/
+		}
+
+		.bs-lo-member img{
+			height: 22px;
+			width: 22px;
+			opacity: .6;
+		}
+
+		.bs-lo-member a{
+			font-size: 0.8rem;
+			letter-spacing:1px; 
+			display: block;
+			text-decoration: none;
+			color:#666;
+			margin-right:10px; 
+		}
+
+		.bs-lo-member a,.bs-lo-member img{
+			display: inline-block;
+			vertical-align:middle;
+
+		}
+
+		.m-bs-lightbox,.m-lo-bs-lightbox,.m-all-lightbox{
+			text-align: left;
+			color: #666;
+			height:0;
+			width: 50vw;
+			margin: auto;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			position: fixed;
+			overflow: hidden;
+			transition: .5s;
+			box-shadow:0px 0px 10px rgba(0,0,0,.6);
+			background-color:rgba(44,120,137,0.3);  
+			border-radius:10px; 
+			box-sizing: border-box;
+			z-index: 999;
+		}
+
+		.m-bs-btn-all{
+			width: 120px;
+			margin: auto;
+			top:0;
+			right: 0;
+			bottom: 0;
+			left: 0;	
+		}
+
+
+		.m-bs-btn{
+			width: 120px;
+			height: 40px;
+			color:#fff;
+			background-color: rgba(70, 130, 180, .8);
+			border-radius: 5px;
+			border:none;
+			margin:10px 0;
+			text-align: center;
+			font-size: 1rem; 
+			letter-spacing:0.25rem;
+			line-height: 40px;
+			cursor: pointer;
+		}
+		
+		.m-bs-btn a{
+			text-decoration: none;
+			color:#fff;
+		}
+		.m-bs-all{
+			position: absolute;
+			margin: auto;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			/*outline: 1px solid red;*/
+			/*z-index: 999;*/
+		}
+		
+		
+
+		
+
+		@media screen and (max-width:767px){
+        
+	  		.desk-bs{display:none !important;}
+	     	.mobile-bs{display:block !important;}
+			.bs-lo-member-zone{display:none !important;}
+			.m-bs-lo-member-zone{display:block !important;}
+			.bs-lightbox{width:90vw;}
+			.m-all-lightbox{width: 90vw;}
+
+	    }
+
+	    /*平板直*/
+	    @media screen and (min-width: 768px) and (max-width: 991px){
+	       .desk-bs{display:none !important;}
+	       .mobile-bs{display:block !important;}
+	       .bs-lo-member-zone{display:none !important;}
+	       .m-bs-lo-member-zone{display:block !important;}
+		   .bs-lightbox{width:50vw;}
+			
+	    }
+
+	    /*平板橫*/
+	    @media screen and (min-width: 992px) and (max-width: 1199px){
+	       
+	       
+	        
+			.mobile-bs{display:none !important;}
+			.m-bs-lo-member-zone{display:none !important;}
+	        /*.bs-content1 table tr:last-child{display:none;}*/
+			.bs-lightbox{width:30vw;}
+			#trans-to-signup{display: none;}
+	    }
+	    
+	  /*桌機*/
+	    @media screen and (min-width:1200px){
+	        
+	        .mobile-bs{display:none !important; }
+	        .m-bs-lo-member-zone{display:none !important;}
+	       	/*.bs-content1 table tr:last-child{display:none;}*/
+	       	.bs-lightbox{width:25vw;}
+	       	#trans-to-signup{display: none;}
+	  
+	        
+	    }
+

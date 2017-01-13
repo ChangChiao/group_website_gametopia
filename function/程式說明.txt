@@ -1,0 +1,7 @@
+connectSQL.php -> 連線SQL程式
+
+memberBarSwitcher.php -> include用程式，右上角會員
+
+memberRegistered.php -> 會員註冊
+
+sessionMember.php -> 會員登入

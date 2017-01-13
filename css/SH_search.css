@@ -1,0 +1,515 @@
+*{
+  margin: 0;
+  padding: 0;
+  /*font-size: 0;*/
+  font-family: "微軟正黑體";
+  color: #555;
+  /*outline: 1px solid #f05;*/
+}
+
+body{
+  background: url(../images/pageBackground.png) no-repeat center center;
+  background-attachment: fixed;
+}
+
+
+.SHSearch_container{
+  margin: 0 auto;
+  width: 50%;
+  background:rgba(255,255,255,0.6);
+
+  box-shadow: 0px 0px 10px #999;
+}
+
+
+/*搜尋bar*/
+
+
+.gameSearchBar{
+  display: block;
+  padding:3px;
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align: center;
+}
+
+.gameSearchBar select{
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.gameSearchBar select option{
+  font-size: 20px;
+}
+
+
+.gameP, .gameType{
+  display: inline-block;
+  margin: 80px 20px 40px;
+}
+
+.gamePIcon, .gameTypeIcon{
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+.SH_searchboxarea{
+  padding: 20px 0 50px;   
+}
+
+.SH_searchbox{
+  padding: 5px 8px; 
+  margin: 0 auto; 
+  width: 70%;
+  height: 50px;
+  border-radius: 8px;
+  background-color: rgba(50, 175, 204, 0.2);
+  box-shadow: 0px 0px 10px rgba(19, 52, 93, 0.5);
+  border: 1px solid #fff;
+  line-height: 42px;  
+}
+
+.SH_searchmain{
+  width: 90%;
+  height: 60%; 
+  vertical-align: middle;
+  display: inline-block;  
+}
+
+
+.SH_searchmain input{
+  width: 100%;  
+  height: 100%;  
+  font-size: 20px; 
+  border-radius: 5px; 
+  border: none;
+  padding: 3px 5px;
+  border: 1px solid rgba(19, 52, 93, 0.3);
+}
+
+.SH_searchIcon{
+  display: inline-block;
+  vertical-align: middle;
+  width: 5%;
+  height: 60%;
+  padding-top: 5px; 
+  padding-left: 20px; 
+}
+
+.SH_searchIcon .fa-search{
+  font-size: 28px; 
+  color: #5270A2;
+  cursor: pointer; 
+  transition: 0.35s;
+}
+
+.SH_searchIcon .fa-search:hover{
+  color: #6BC6B9;
+}
+
+
+/*products*/
+
+.productInfoarea{
+  display: inline-block;
+
+}
+
+
+.SH_products{
+  margin: 0 auto;
+  width: 90%;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+
+.SH_productbox{
+  width: 80%;
+/*  height: 250px;*/
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.4);
+  margin: 3% auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.SH_productbox:hover{
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 8px #4E6691;
+  background-color: rgba(168,217,255,0.4);
+  transition: 0.35s;
+}
+
+.SH_productImg{
+  display: inline-block;
+  vertical-align: top;
+  width: 23%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.SH_productImg img{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.SH_productContent{
+  display: inline-block;
+  width: 70%;
+  height: 85%;
+  margin-left: 30px;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+#SH_productName{
+  font-size: 24px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+span.gameMom{
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  margin-right: 30px;
+  padding: 0px 4px 0px 10px;
+  /*width:50px;*/
+  height: 26px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+/*  top: 0;*/
+  box-sizing: border-box;
+}
+
+#gameMomPS:after, #gameMom3DS:after, #gameMomXBOX:after, #gameMomPC:after{
+    content: "";
+    height: 0;
+    width: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin:auto;
+    border: 13px solid transparent;
+    right: -26px;
+
+}
+
+#gameMomPS{
+  background-color: #0072BC;
+}
+
+#gameMomPS:after{
+  border-left:13px solid #0072BC;
+}
+
+#gameMom3DS{
+  background-color: #C05459;
+}
+#gameMom3DS:after{
+  border-left:13px solid #C05459;
+}
+
+#gameMomXBOX{
+  background-color: #7CC576;
+}
+#gameMomXBOX:after{
+  border-left:13px solid #7CC576;
+}
+
+#gameMomPC{
+  background-color: #A865A8;
+}
+#gameMomPC:after{
+  border-left:13px solid #A865A8;
+}
+
+
+.pricebox{
+  font-size: 16px;
+  padding: 10px 0 0px;
+  box-sizing: border-box;
+}
+
+#price{
+  font-size: 22px;
+  color:#d05;
+  font-weight: bold; 
+  box-sizing: border-box;
+}
+
+
+.memobox{
+  height: 18%;
+  padding: 8px 0px;
+  box-sizing: border-box;
+}
+
+#memo{
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.paybar{
+  display: block;
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+
+.paybox{
+  float: right;
+  box-sizing: border-box;
+}
+
+.clearBoth{
+  clear: both;
+}
+
+.count{
+  display: inline-block;
+  width: 50px;
+  font-size: 16px;
+  padding-right: 10px;
+
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+select#count{
+  box-sizing: border-box;
+
+  width: 100%;
+  padding: 1px 1px 2px;
+  font-size: 16px;
+}
+
+.add_Cart{
+  width: 150px;
+  height: 40px;
+  color:#fff;
+  background-color:steelblue;
+  border-radius:5px;
+  font-weight: 500;
+  line-height: 32px;
+  padding:3px 0px 4px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  font-size: 22px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+/*==================rwd=======================*/
+/*手機*/
+    @media screen and (max-width:767px){
+        
+      .SHSearch_container{      
+        width: 100%;
+      } 
+
+      .SH_productbox{
+        width: 95%;
+        /*height: 500px;*/
+        text-align: center;
+      }
+
+
+      .gameP{
+        margin: 10% 5% 5%;
+      }
+
+      .gameType{
+        margin: 5%;
+      }
+
+      .SH_searchbox{
+        width: 85%;
+        text-align: left;
+      }
+
+      .SH_searchmain{
+        width: 80%;
+        padding-left: 2%;
+      }
+
+
+      .SH_searchIcon{
+        width: 10%;
+        padding-left: 8%;
+      }
+
+      .tags{
+        padding-left: 10%;
+        text-align: left;
+      }
+      .gameMom{
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        margin-right: 30px;
+        padding: 0px 4px 0px 10px;
+        height: 26px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: #fff;
+        box-sizing: border-box;
+        margin-bottom: 8px;  
+      }
+
+
+ /*===========================by chiao     */
+
+      .SH_productImg{
+        text-align: center; 
+        display: inline-block;
+        position: relative;
+        margin: auto; 
+        width: 60%;
+        height: 0;
+        padding-bottom:80%; 
+        overflow: hidden;
+      }
+        
+      .SH_productImg img{
+        position: absolute;
+        width:100%;
+        height:auto;  
+        top: 0;
+        left: 0;
+      }
+/*=================================== by chiao end*/
+      .productInfoarea{
+        width: 100%;  
+        margin-top:10px; 
+
+      }
+
+      .SH_productContent{
+        width: 80%; 
+      }
+      .SH_productbox{
+        padding: 10px 0; 
+      }
+
+      .SH_productContent{
+        text-align: center; 
+        margin-left:0;
+      }
+
+      .memobox{
+        display: none;  
+      }
+
+      .count{
+        display: none;   
+      }
+      
+
+      .paybox{
+        width: 100%;  
+        float: none;  
+        text-align: center; 
+      }
+
+
+      .add_Cart {
+        width: 90%;
+      }  
+
+
+    }
+
+
+    /*平板直*/
+    @media screen and (min-width: 768px) and (max-width: 991px){
+     /* *{
+        outline: 1px solid red;
+      }*/
+      .SHSearch_container{      
+        width: 100%;
+      } 
+
+      .SH_productbox{
+        width: 90%;
+      }
+
+      .SH_productImg{
+        display: inline-block; 
+        width: 30%;   ;     
+      }
+
+      .productInfoarea{
+        width: 65%;
+      }
+      .gameMom{
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        margin-right: 30px;
+        padding: 0px 4px 0px 10px;
+        height: 26px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: #fff;
+        box-sizing: border-box;
+        margin-bottom: 8px;  
+      }
+
+
+     
+    }
+
+    /*平板橫*/
+    @media screen and (min-width: 992px) and (max-width: 1199px){
+       
+      .SHSearch_container{      
+        width: 80%;
+      } 
+
+      .SH_productbox{
+        width: 90%;
+      }
+
+
+      .SH_productImg{
+        display: inline-block; 
+        width: 28%;
+      }
+
+      .SH_productbox .productInfoarea{
+        width: 70%;  
+      }
+
+    }
+    
+  /*桌機*/
+    
+
+    @media screen and (min-width:1200px){
+        
+      .productInfoarea{
+        display: inline-block;
+        width: 75%;
+      }
+
+        
+    }
+
+

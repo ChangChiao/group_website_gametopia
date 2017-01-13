@@ -1,0 +1,539 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	vertical-align: middle;
+}
+body{
+	background-color: #00324E;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-image: url("../images/pageMember.png");
+  background-size: cover;
+}
+.outBox{
+	padding: 70px 10px 0 10px ;
+	position: relative;
+	left: 0;right: 0;
+	margin: 0 auto;
+	height: calc(100vh - 70px);
+	box-shadow: 0px 0px 10px rgba(0,0,0,.6);
+	background-color: rgba(255,255,255,.6);
+}
+
+.message{padding-left:5px;}
+@media all and (max-width: 991px){
+	.outBox{
+		padding-top: 0px;
+		margin-top: 70px;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+}
+
+.outBoxContainer{
+	width: 100%;
+	overflow: hidden;
+	z-index: 10;
+}
+.outBox2{
+	padding: 80px 10px 0 10px ;
+	box-sizing: border-box;
+	margin: 0 auto;
+	background-color: rgba(255,255,255,.6);
+}
+
+.left{
+	height: 100%;
+	padding-right: 2%;
+}
+.right{
+	box-sizing: border-box;
+	/*margin-top:70px;*/
+	height: 100%;
+	background-color: rgba(255,255,255,.6);
+}
+@media all and (min-width: 992px){
+	.right{
+		margin-top: 0;
+	}
+}
+.top{
+	font-size: 0;
+	position: relative;
+}
+.left .top{
+	position: relative;
+	color: #333;
+}
+.left .top:after{
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: rgba(0, 85, 85, .3);
+	position: absolute;
+	bottom: 0;left: 0;
+}
+.top>input{font-size: 16px;}
+.top>li{
+	min-width: 30%;
+	min-height: 60px;
+	display: inline-block;
+	box-sizing: border-box;
+	padding-top: 25px;
+	text-align: center;
+	position: relative;
+	top: 0;right: 0;bottom: 0;left: 0;
+	margin: auto;
+	font-size: 16px;
+}
+@media all and (max-width: 992px){
+	.right .top>li{
+		min-height: 60px;
+		max-height: 60px;
+		padding-top: 23px;
+	}
+}
+.mailList{
+	height: calc(100% - 122px);
+	overflow: hidden;
+	position: relative;
+}
+.mailList .mailBox{
+	position: absolute;
+	left: 0;top: 0;
+	z-index: 1;
+	min-width: 100%;
+	min-height: 100%;
+}
+.mailList .mailBox .mail{
+	border-width: 0 0 0 7px;
+	border-color: transparent;
+	border-style: solid;
+	cursor: pointer;
+	color: #666;
+	padding: 10px 5px;
+}
+.mailList .mailBox .mail + .mail{border-top: 1px solid #002C44;}
+.mailList .mailBox .mail:hover{border-color: #002C44 #000 #000 #006aa6;}
+.mailList .mailBox .mail .name{color: #rgba;}
+.mailList .mailBox .mail .title{margin-top: 5%;}
+
+/*scrollBar設定*/
+.dv_scroll_bar{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 14px;
+	height: 100%;
+}
+.dv_scroll_bar .Scrollbar-Track{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 25px;
+	height: 100%;
+	z-index: 10;
+}
+.dv_scroll_bar .Scrollbar-Handle{
+	position: absolute;
+	right: 15px;
+	width: 7px;
+	height: calc(100%);
+	overflow: hidden;
+	background-color: #000;
+	cursor:pointer;
+	border-radius: 1000px;
+	opacity: 0;
+	transition: opacity 0.3s 0s linear;
+}
+#Scrollbar-Handle_2{top: 0;}
+#Scrollbar-Handle_3{bottom: 60px;}
+/*scrollBar設定*/
+
+.mailList .time{
+	text-align: right;
+	padding-right: 15px;
+}
+.mailList .headImg {
+	position: relative;
+	padding-top: calc(100% * 3 / 12);
+	overflow: hidden; }
+.mailList .headImg img{
+	position: absolute;
+	width: 85px;
+	height: 85px;
+	border-radius: 5px;
+	left: 0;right: 0;top: 0;bottom: 0;
+	margin: auto;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 10px;
+}
+@media all and (max-width: 991px) {
+	.mailList .headImg {
+		max-width: 100px;
+		padding-top: 100px; }
+	.mailList .headImg img {
+		max-width: 70px; } }
+.footer{
+	font-size: 0px;
+	position: relative;
+}
+.footer span{
+	font-size: 13px;
+	line-height: 60px;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: #385F7A;
+}
+.footer:before{
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: rgba(0, 85, 85, .3);
+	position: absolute;
+	top: 0;left: 0;
+}
+
+.right .mailInfoList{
+	height: calc(100% - 60px);
+	overflow: hidden;
+	position: relative;
+}
+@media all and (max-width: 992px){
+	/*.right .mailInfoList{
+		height: calc(100% - 130px);
+	}*/
+}
+.right .mailBox2{
+	box-sizing: border-box;
+	padding: 10px;
+	padding-bottom: 60px;
+	position: absolute;
+	bottom: 60px;left: 0;
+	min-height: calc(100% - 60px);
+	min-width: 100%;
+	background-color:rgba(255,255,255,.6); 
+}
+
+.mailInfo{
+	margin: 15px 0;
+}
+.right .mailBox2 .mailInit{
+	position: relative;
+	width: 100%;
+	padding-top: calc(100% - 120px);
+	margin-bottom: -120px;
+	/*background-color: #fa0;*/
+}
+.right .mailBox2 .mailInit>span{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 10%;
+	/*outline: 1px solid red;*/
+	left: 0;top: 0;right: 0;bottom: 0;
+	margin: auto;
+	text-align: center;
+}
+.right .mailInfo .headImg {
+	padding-top: calc(100% * 2 / 12);
+	position: relative;
+	left: 0;top: 0;right: 0;bottom: 0;
+	margin: auto;
+	overflow: hidden; }
+.right .mailInfo .headImg img{
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+	top: 0;
+	left: 0;right: 0;
+	margin: 0 auto;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 8px;
+}
+.right .info .sender, .right .info .title, .right .info .content{
+	text-align: left;
+	padding: 10px;
+}
+.right .time{
+	text-align: right;
+	padding: 10px;
+}
+/*==============*/
+.reply{
+	width: 100%;
+	position: absolute;
+	bottom: 0;left: 0;
+	box-shadow: 0px 0px 10px #aaa;
+	background-color: #f9f9f9;
+	z-index: 50;
+}
+#reply{display: none;}
+.reply .upper{
+	height: 60px;
+	border-bottom: 1px solid #ccc;
+}
+.reply .down{
+	display: none;
+	height: 300px;
+}
+.reply #reply:checked ~ .down{display: block;}
+.reply label{cursor: text;}
+.reply .upper .to{
+	cursor: text;
+	padding-top: 2%;
+	padding-left: 5%;
+}
+.reply .upper .icon{
+	cursor: pointer;
+	font-size: 22px;
+	margin-top: 3%;
+}
+.reply .down .contentBox{
+	position: relative;
+	overflow: hidden;
+	height: 240px;
+}
+.reply .down .contentBox .contenteditable{
+	outline: none;
+	font-size: 18px;
+	line-height: 24px;
+	min-height: 120px;
+	max-height: 250px;
+	max-width: 600px;
+	width: 100%;
+	position: relative;
+	margin: 3% 0 0 5%;
+	z-index: 3;
+	overflow-x: auto;
+	overflow-y: auto;
+	word-wrap:break-word;  /*遇到空格整个单词显示不完就自动换行到下一行*/
+	word-break:break-all;  /*如果一行没有空格就到头截断单词换行*/
+}
+.reply .down .contentBox .palceholder{
+	position: absolute;
+	top: 8%;left: 5%;
+	font-size: 18px;
+	line-height: 24px;
+	height: 30px;
+	color: #767676;
+	z-index: 2;
+}
+.reply .down .sendBtn{
+	text-align: right;
+	box-sizing: border-box;
+	padding-right: 2%;
+	padding-top: 0.7%;
+	border-top: 1px solid #ccc;
+}
+.reply .down .sendBtn #sendNewMail_1{
+	width: 16%;
+	margin-left: 84%;
+	box-sizing: border-box;
+	letter-spacing: 2px;
+	min-height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	text-align: center;
+	padding: 0 1%;
+	text-decoration: none;
+	border-radius: 10px;
+	background-color: #3397CF;
+	font-weight: 600;
+	color: #fff;
+	cursor: pointer;
+}
+/*==============*/
+.right .top{box-shadow: 0px 0px 10px #aaa;}
+.right .top li{position: relative; letter-spacing:2px;}
+.right .top li:after{
+	content: '';
+	width: 50%;
+	height: 5px;
+	background-color: #3397CF;
+	position: absolute;
+	left: 0;right: 0;
+	margin: auto;
+	bottom: 0;
+	display: none;
+}
+.right .writeMail{height: calc(100% - 60px);}
+.right .writeMail .aa{
+	height: calc(100% - 60px);
+	overflow: hidden;
+	position: relative;
+}
+.writeMail input{
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	font-size: 18px;
+	line-height: 24px;
+	margin: 3% 0 5% 5%;
+	height: 30px;
+	width: 95%;
+	background-color: transparent;
+}
+.writeMail .content .contentBox{
+	position: relative;
+	overflow: hidden;
+}
+.writeMail .content .contentBox .contenteditable{
+	outline: none;
+	font-size: 18px;
+	line-height: 24px;
+	height: 120px;
+	min-height: 120px;
+	max-height: 300px;
+	max-width: 600px;
+	width: 95%;
+	position: relative;
+	margin: 3% 0 0 5%;
+	z-index: 3;
+	overflow-x: auto;
+	overflow-y: auto;
+	word-wrap:break-word;  /*遇到空格整个单词显示不完就自动换行到下一行*/
+	word-break:break-all;  /*如果一行没有空格就到头截断单词换行*/
+}
+.writeMail .content .contentBox .palceholder{
+	position: absolute;
+	top: 10%;left: 5%;
+	font-size: 18px;
+	line-height: 24px;
+	height: 30px;
+	color: #767676;
+	z-index: 2;
+}
+.writeMail .sendBtn{
+	text-align: right;
+	box-sizing: border-box;
+	padding-right: 2%;
+	padding-top: 0.7%;
+	border-top: 1px solid #ccc;
+}
+@media all and (max-width: 991px){
+	.writeMail .sendBtn{
+		min-height: 60px;
+	}
+}
+.writeMail .sendBtn #sendNewMail_2{
+	width: 16%;
+	margin-left: 84%;
+	box-sizing: border-box;
+	min-height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	text-align: center;
+	padding: 0 1%;
+	text-decoration: none;
+	border-radius: 10px;
+	background-color: #3397CF;
+	font-weight: 600;
+	color: #ddd;
+	cursor: pointer;
+}
+#readMail,
+#writeMail,
+#Read,
+#unRead{display: none;}
+
+.right .mailInfoList,
+.right .writeMail,
+.left .mailList{display: none;}
+.left #Read:checked ~ .top #R1{color: #fff;}
+.left #unRead:checked ~ .top #R2{color: #666	; letter-spacing:2px;}
+.left #Read:checked ~ #mailList_1{display: block;}
+.left #unRead:checked ~ #mailList_2{display: block;}
+.right #readMail:checked ~ .mailInfoList{display: block;}
+.right #readMail:checked ~ .top #a1:after{display: block;}
+.right #writeMail:checked ~ .writeMail{display: block;}
+.right #writeMail:checked ~ .top #a2:after{display: block;}
+label{cursor: pointer;}
+
+@media all and (min-width: 992px){
+	#R2{
+		cursor: default;
+	}
+}
+
+
+/*威昌追加*/
+.unReadMail{
+	background-color: rgba(204, 235, 236, .5);
+}
+
+/*===================rwd=====================*/
+@media screen and (max-width: 767px){
+	  .personalImage{width: 22%;}
+	  .outBox2{display:none;}
+	  .outBox{width: 100%;}
+	  .outBoxContainer{width: 100%;overflow:auto;}
+	  .right,.left{width: 100%;}
+	  .right{position: absolute;top: 0;right: -100%;z-index:500;transition:.5s;
+	  	background-color:rgba(255,255,255,.1); }
+	  .right .top{padding-left:40px;background-color:#fff;}
+	  .right .mailBox2 {bottom:0;}
+	  .writeMail .sendBtn{background-color:#fff;}
+	  /*.mailInfo{background-color: #fff;}*/
+   	  #rightMailList{background-color: #fff;}
+   	  .aa{background-color:#fff;}
+   	  #back_btn{cursor: pointer;font-size: 2rem;position: relative; top:-8px; left: -40px; color:#666;}
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+	  .outBox2{display:none;}
+	  .outBox{width: 100%;}
+	  .outBoxContainer{width: 100%;overflow: auto;}
+	  .right,.left{width: 100%;}
+	  .right{position: absolute;top: 0;right: -100%;z-index:500;transition:.5s;
+	  background-color:rgba(255,255,255,.1);}
+	  .right .top{padding-left:40px;background-color:#fff;box-sizing: border-box;}
+	  .right .mailBox2 {bottom:0;}
+	  .writeMail .sendBtn{background-color:#fff;}
+	  /*.mailInfo{background-color: #fff;}*/
+	  .aa{background-color:#fff;}
+	  #rightMailList{background-color: #fff;}
+	  #back_btn{cursor: pointer; font-size: 2rem;position: relative; top:-8px; left: -40px; color:#666;}
+}
+
+@media screen and (min-width:992px) and (max-width: 1199px){
+	.outBox {
+	width: 970px;
+	margin: 0 auto; }
+	.outBox2{display:none;}
+	#back_btn{display: none;}
+}     
+@media screen and (min-width:1200px){
+	.outBox{width:1170px;}
+	#back_btn{display: none;}
+ 	.outBox2{display:none;}
+}
+
+#R2, #writeNewMessageOnCellPhone {display: none;}
+#writeNewMessageOnCellPhone {
+	margin: 0 9% 4% 30px;
+	width: 40px;
+	height: auto;
+	cursor: pointer;
+}
+@media all and (max-width: 991px) {
+	#R2 {
+		display: none;
+	}
+	#writeNewMessageOnCellPhone {
+		display: block;
+	}
+}
+@media all and (min-width: 992px) {
+	#R2 {
+		display: block;
+	}
+	#writeNewMessageOnCellPhone {
+		display: none;
+	}
+}

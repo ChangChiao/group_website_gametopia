@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: "微軟正黑體";
+	outline: 1px solid #f00;
+}
+.clearFIx{
+	clear: both;
+}
+.contener{
+	padding-top: 5%;
+}
+
+/*開頭步驟部分*/
+.stepIcon{
+	width: 100%;
+	padding-bottom: 10%;
+	height: 0;
+	text-align: center;
+}
+.icon01, .icon02, .icon03{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #f00;
+}
+
+/*收件人資訊*/
+
+label[for="orderContecter"]{
+	background-color: #f00;
+	width: 30%;
+}
+#orderContecter{
+	width: 65%;
+	border-radius: 8% 8% 8% 8%;
+}
+label[for="contecterPhone"]{
+	background-color: #f00;
+	width: 30%;
+}
+#contecterPhone{
+	width: 65%;
+	border-radius: 8% 8% 8% 8%;
+}
+label[for="contecterAddress"]{
+	background-color: #f00;
+	width: 30%;
+}
+#cityCountry{
+	width: 10%;
+	border-radius: 8% 8% 8% 8%;
+}
+#address{
+	width: 55%;
+	border-radius: 8% 8% 8% 8%;
+}
+
+/*付款方式*/
+
+.payingWay{
+	width: 100%;
+	height: 300px;
+}
+.creditCard{
+	width: 100%;
+	height: 40px;
+}
+.cardInfo{
+	width: 100%;
+	padding-left: 10%;
+}
+.cardNum{
+	width: 100%;
+	height: 60px;
+}
+.dayLimit{
+	width: 100%;
+	height: 60px;
+}
+label[for="cardNumber"]{
+	width: 15%;
+	padding-left: 3%;
+	margin-right: 3%;
+}
+.cardInfo input{
+	width: 10%;
+	margin-left: 5%;
+	position: relative;
+}
+.cardInfo label + input{
+	margin-left: 0;
+}
+.cardInfo span{
+	width: 10%;
+	position: relative;
+}
+.cardInfo span::before{
+	content: "";
+	display: block;
+	width: 38%;
+	border-bottom: 1px solid black;
+	position: absolute;
+	left: -4%;
+	top: 55%;
+}
+label[for="dateLimit"]{
+	width: 15%;
+	padding-left: 3%;
+	margin-right: 3%;
+}
+#monthLimit, #dayLimit{
+	width: 10%;
+}
+label[for="dayLimit"]{
+	margin-right: 5%;
+}
+label[for="saftyCode"]{
+	margin-right: 3%;
+}
+.atmInfo{
+	display: none;
+}

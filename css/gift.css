@@ -1,0 +1,270 @@
+/*=================頁面版面開始=====================*/
+*{
+  margin: 0;
+  padding: 0;
+  list-style:none;
+  vertical-align: middle;
+  font-family: "微軟正黑體";
+  /*outline: 1px solid red;*/
+}
+.wrapper{
+	/*background-image: url("background.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;*/
+	/*background-color: #A4FFC6;*/
+}
+.container{
+	width: 80%;
+	margin: auto;
+	vertical-align: middle;	
+	height: 850px;
+}
+.leftCol{
+	float: left;
+	text-align: center;
+	width: 300px;
+	height: 600px;
+	padding: 50px 70px;
+	margin: 40px 80px;
+}
+.rightCol{
+	float: left;
+	text-align: center;
+	width: 600px;
+	height: 600px;
+	padding: 50px 70px;	
+	margin: 40px 80px;
+}
+.question p{
+	font-size: 32px;
+}
+.option input[type="button"]{
+	height: 40px;
+	width: 120px;
+	color: #168bf2;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 40px;
+	margin: 20px 30px;
+}
+.buttonBar input[type="button"]{
+	height: 40px;
+	width: 120px;
+	color: #168bf2;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 40px;
+	margin-left: 365px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.options{
+	padding-top: 200px;
+}
+.header{
+		height: 70px;
+}
+
+.header-bg{
+	height: 70px;
+	background-image:url(images/nav-bg.png); 
+}
+/*=================頁面版面開始=====================*/
+
+/*=================會員右上狀態開始=====================*/
+.member-zone{
+	text-align: center;
+	font-size: 0;
+	float: right;
+	position: relative;
+	z-index:10; 
+}
+
+.member{
+	display: inline-block;
+	vertical-align: top;
+	padding:0  8px;
+}
+
+.member img{
+	height: 22px;
+	width: 22px;
+	opacity: .6;
+}
+
+.member a{
+	font-size: 0.8rem;
+	text-decoration: none;
+	color:#666;
+}
+
+.member a,.member img{
+	display: inline-block;
+	vertical-align:middle;
+}
+
+#mem{
+	margin-right:5px; 
+}
+/*=================會員右上狀態結束=====================*/
+
+/*===================選單列和logo開始===================*/
+
+.header-bottom{
+	text-align: center;
+	font-size: 0;
+	position: relative;
+	top:-65px;
+	box-sizing: border-box;
+	/*background-color: #fa0;*/
+}
+
+.logo{
+	height: 60px;
+	width: 60px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 40px;
+	
+}
+
+img{
+	width: 100%;
+	height:auto;
+}
+
+.meun{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0;
+	text-align: center;
+	padding-right:450px; 
+}
+
+.meun-all li {
+	display: inline-block;
+	vertical-align: middle;
+	/*padding: 10px 0;*/
+	
+}
+
+.meun-all li a{
+	text-decoration: none;
+	padding: 10px 20px;
+	color: #666;
+	font-size:1rem ;
+	font-weight: 500;
+	position:relative; 
+}		
+
+.meun-all li a:after{
+	content: "";
+	display:block;
+	position: absolute;
+	bottom:0;
+	left: 21px;
+	height: 2px;
+	width:0px;
+	background:#6ea4bf;
+	transform: scaleX(0);
+}
+
+.meun-all li a:hover {
+	transition: .5s;
+	opacity: .8;
+}
+
+.meun-all li a:hover:after{
+	width: 60px;
+	transform: scaleX(1.1);
+	transition: .5s;
+
+}
+
+.meun-all li:last-child a:hover:after{
+	width: 45px;
+	transform: scaleX(1.1);
+	transition: .5s;
+
+}
+/*===================選單列和logo結束===================*/
+
+/*===================JQuery換頁效果開始===================*/
+body{
+    overflow: hidden;
+}
+/*    插入背景圖片    */
+.p01{
+    background-image:url(images/background.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /*background-color: hsla(50, 60%, 80%, 1);*/
+    height:100vh;
+    position: relative;
+}
+
+/*.p01:after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image:url(images/background.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	opacity: 0.2;
+	z-index: -1;
+
+}*/
+.p02{
+    /*background-image:url(images/p02.jpg);
+    background-size:cover;*/
+    background-repeat: no-repeat;
+    /*background-color: #abb88e*/
+    height:100vh;
+}
+.p03{
+    /*background-image:url(images/p03.jpg);
+    background-size:cover;*/
+    background-repeat: no-repeat;
+    /*background-color: #46dd46*/
+    height:100vh;
+}
+.p04{
+    /*background-image:url(images/p04.jpg);
+    background-size:cover;*/
+    background-repeat: no-repeat;
+    /*background-color: #69c*/
+    height:100vh;
+}
+.p05{
+    /*background-image:url(images/p05.jpg);
+    background-size:cover;*/
+    background-repeat: no-repeat;
+    /*background-color: #b0e2ff*/
+    height:100vh;
+}
+/*    插入導覽列     */
+.nav{
+    position: fixed;
+    top:50%;
+    right:0px;
+    cursor:pointer;
+}
+li{
+    width:10px;
+    height:10px; 
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.5) inset,-1px -1px 1px rgba(0,0,0,0.5) inset;
+    list-style-type: none;
+}
+h1{
+    font-size:60px;
+    color:ghostwhite;
+    text-shadow:0px 0px 15px black;
+}
+/*===================JQuery換頁效果結束===================*/

@@ -1,0 +1,900 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: middle;
+  font-family: 'Microsoft JhengHei'; 
+  /*outline:1px solid red;*/
+}
+
+div[class^="col_"] {
+  float: left;
+  box-sizing: border-box; }
+
+body{
+  background-image:url(../images/pageShoppingmall.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size: cover;
+}
+
+.clearfix {
+  width: 100%;
+  height: 0;
+  clear: both; }
+
+@media all and (max-width: 767px) {
+  .col_xs_1 {
+    width: 8.33333%; }
+
+  .col_xs_2 {
+    width: 16.66667%; }
+
+  .col_xs_3 {
+    width: 25%; }
+
+  .col_xs_4 {
+    width: 33.33333%; }
+
+  .col_xs_5 {
+    width: 41.66667%; }
+
+  .col_xs_6 {
+    width: 50%; }
+
+  .col_xs_7 {
+    width: 58.33333%; }
+
+  .col_xs_8 {
+    width: 66.66667%; }
+
+  .col_xs_9 {
+    width: 75%; }
+
+  .col_xs_10 {
+    width: 83.33333%; }
+
+  .col_xs_11 {
+    width: 91.66667%; }
+
+  .col_xs_12 {
+    width: 100%; } }
+@media all and (min-width: 768px) {
+  .col_sm_1 {
+    width: 8.33333%; }
+
+  .col_sm_2 {
+    width: 16.66667%; }
+
+  .col_sm_3 {
+    width: 25%; }
+
+  .col_sm_4 {
+    width: 33.33333%; }
+
+  .col_sm_5 {
+    width: 41.66667%; }
+
+  .col_sm_6 {
+    width: 50%; }
+
+  .col_sm_7 {
+    width: 58.33333%; }
+
+  .col_sm_8 {
+    width: 66.66667%; }
+
+  .col_sm_9 {
+    width: 75%; }
+
+  .col_sm_10 {
+    width: 83.33333%; }
+
+  .col_sm_11 {
+    width: 91.66667%; }
+
+  .col_sm_12 {
+    width: 100%; } }
+@media all and (min-width: 992px) {
+  .col_md_1 {
+    width: 8.33333%; }
+
+  .col_md_2 {
+    width: 16.66667%; }
+
+  .col_md_3 {
+    width: 25%; }
+
+  .col_md_4 {
+    width: 33.33333%; }
+
+  .col_md_5 {
+    width: 41.66667%; }
+
+  .col_md_6 {
+    width: 50%; }
+
+  .col_md_7 {
+    width: 58.33333%; }
+
+  .col_md_8 {
+    width: 66.66667%; }
+
+  .col_md_9 {
+    width: 75%; }
+
+  .col_md_10 {
+    width: 83.33333%; }
+
+  .col_md_11 {
+    width: 91.66667%; }
+
+  .col_md_12 {
+    width: 100%; } }
+@media all and (min-width: 1200px) {
+  .col_lg_1 {
+    width: 8.33333%; }
+
+  .col_lg_2 {
+    width: 16.66667%; }
+
+  .col_lg_3 {
+    width: 25%; }
+
+  .col_lg_4 {
+    width: 33.33333%; }
+
+  .col_lg_5 {
+    width: 41.66667%; }
+
+  .col_lg_6 {
+    width: 50%; }
+
+  .col_lg_7 {
+    width: 58.33333%; }
+
+  .col_lg_8 {
+    width: 66.66667%; }
+
+  .col_lg_9 {
+    width: 75%; }
+
+  .col_lg_10 {
+    width: 83.33333%; }
+
+  .col_lg_11 {
+    width: 91.66667%; }
+
+  .col_lg_12 {
+    width: 100%; } }
+/*div {
+  margin-top: 10px; }
+*/
+
+
+/*==============================================================*/
+   @media all and (min-width: 992px){
+    .machinType {text-align: left;}  
+    /*.machinType .tag{margin: 0 auto;}*/
+   }
+   @media all and (max-width: 991px) {
+    
+    .commentType button {
+    width: 70px;
+    padding: 5px 10px;
+    color: #E8F1E8;
+    border: none;
+    border-radius: 5px 5px 0 0/ 5px 5px 0 0;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    float:left; }
+  .commentType button + button {
+    margin-left: 1px; }
+  .commentType #commentType_all {
+    background-color: #60B859; }
+  .commentType #commentType_excellent {
+    background-color: #3E92CC; }
+  .commentType #commentType_soso {
+    background-color: #3BA99C; }
+  .commentType #commentType_bad {
+    background-color: #FC9E4F; }
+  .aa {
+    position: relative;
+    margin-top: 10%; }
+  .aa .btn_addCart {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto; 
+    bottom: 0;
+    /*box-shadow: 1px 1px 1px red*/; }
+  .machinType{text-align: center;}  
+  .machinType .tag{margin: 0 auto;}
+
+  
+  }
+
+
+  @media all and (max-width: 767px){
+
+    .commentInput .input .headBlock {
+          display: none; }
+
+
+    .commentInput .headBlock{
+    display: none !important;
+    /*outline: 1px solid red;*/
+    } 
+    .commentInput .input .headBlock .imgConstrain{
+      display: none;
+    }
+    label[for="star01"],
+    label[for="star02"],
+    label[for="star03"],
+    label[for="star04"],
+    label[for="star05"]{
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-image: url(../images/star.png);
+      background-size: cover;
+    }
+    input[type='radio']{
+      display: none;
+    }
+    .mesRates{
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+    }
+  }
+  @media all and (min-width: 768px){
+    .mesRates{
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+    }
+  }
+
+
+
+
+/*===============================================================*/
+
+ 
+
+
+@media all and (max-width: 992px){
+  .outBox {
+    width: 100%; 
+    padding:0 10px;
+    padding-top:120px;    
+    box-sizing: border-box; 
+    background-color: rgba(255,255,255,.6);
+    text-align: center;
+    padding-bottom: 10px; } }
+@media all and (min-width: 992px) and (max-width:1199px) {
+  .outBox {
+    width: 970px;
+    padding:90px 2% 200px 2%; 
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,.6);
+    
+    top: 0;
+    left: 0;right: 0;
+    box-shadow:0px 0px 10px rgba(0,0,0,.5); 
+    margin: 0 auto; }}    
+@media screen and (min-width:1200px){
+          
+    .outBox{width:1170px;
+            padding:90px 2% 200px 2%; 
+            box-sizing: border-box;
+            background-color: rgba(255,255,255,.6);
+            
+            top: 0;
+            left: 0;right: 0;
+            box-shadow:0px 0px 10px rgba(0,0,0,.5); 
+            margin: 0 auto;}
+
+}
+
+.mainContainer {
+  width: 85%;
+  margin: 0 auto; }
+@media all and (max-width: 767px) {
+  .mainContainer {
+    width: 100%; } }
+
+.breadCrumbs{
+  margin:20px 0; 
+  color: #999;
+  text-align: left;
+  /*display: none;*/ }
+  .breadCrumbs span a {
+    text-decoration: none;
+    font-size:1rem;
+    letter-spacing:1px; 
+    color: #999;
+    white-space: nowrap;
+    transition: color 0.1s 0s linear; }
+    .breadCrumbs span a:hover{
+      color: #999;}
+  .breadCrumbs .b{
+    margin:0 10px;
+  }
+
+.pic{
+   margin:10px 0;
+   position: relative;
+   right: 0;
+   /*outline: 1px solid red;  */
+}  
+@media all and (max-width: 991px) {
+  .smallPic div:nth-of-type(1) {
+    margin-top: 0; } }
+
+div[class^="pic"] .imgConstrain {
+  position: relative;
+  /*outline: 1px solid rgba(0, 87, 87, .5);*/
+  overflow: hidden;
+  padding-bottom: 70%;
+  cursor: pointer; }
+  div[class^="pic"] .imgConstrain img {
+    /*box-shadow: 1px 1px #000;*/
+    box-shadow: 0px 0px 3px 0px rgba(0, 87, 87, .5);
+    position: absolute;
+    width: 100%;
+    height: auto;
+    right: 0;
+    top: 0; }
+
+.showPic .imgConstrain {
+  position: relative;
+  padding-top: 133.3333334%;
+  /*overflow: hidden;*/ }
+  .showPic .imgConstrain img {
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0px 0px 3px 0px rgba(0, 75, 151, 0.5); }
+
+.prodIntroduce > .prodTitle {
+  font-size: 36px;
+  letter-spacing:5px; 
+  line-height: 200%;
+  font-weight: 500; }
+
+
+.prodIntroduce div[class^="tag"]{
+  width: 60px;
+  margin: 5px 0;
+  color:#fff;
+  background-color:#80aab5;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  line-height: 1.5rem;
+  padding:0px 6px;  
+  text-align: center;
+}
+@media all and (max-width: 991px) {
+  .prodIntroduce div[class^="tag"] {
+    position: relative;
+    top: 0;right: 0;bottom: 0;left: 0;
+    margin: auto; } }
+
+    .prodIntroduce .machinType .tagPS4 {
+      background-color: #0072BC; }
+    .prodIntroduce .machinType .tagXBOX {
+      background-color: #7CC576; }
+    .prodIntroduce .machinType .tagPC {
+      background-color: #A865A8; }
+    .prodIntroduce .machinType .tagWii {
+      background-color: #DAAB10; }
+    .prodIntroduce .machinType .tag3DS {
+      background-color: #C05459; }
+/*#gameMomPS{
+  background-color: #0072BC;
+}
+
+
+#gameMom3DS{
+  background-color: #C05459;
+}
+
+
+#gameMomXBOX{
+  background-color: #7CC576;
+}
+
+
+#gameMomPC{
+  background-color: #A865A8;
+}
+
+
+#gameMomWii{
+  background-color: #DAAB10;
+}*/
+
+
+@media all and (min-width: 992px){
+
+}
+
+
+/*.tag {
+  width: 50px;
+  height: 30px;
+  color: #fff;
+  background-color: #fa0;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.85rem;
+  padding: 0px 6px 0px 14px;
+  text-align: center;
+  position: relative; }
+*/
+
+
+/*.tag:after {
+  content: "";
+  height: 0;
+  width: 0;
+  display: block;
+  border: 15px solid #fa0;
+  border-right: none;
+  border-color: transparent #fa0 transparent #fa0;
+  position: absolute;
+  left: 70px;
+  bottom: 0; }*/
+
+.price {
+  font-size: 22px;
+  letter-spacing:2px; 
+  padding:10px 0; 
+  line-height: 36px;
+  font-weight: 400; }
+
+.star,.pay,.send{
+  font-size: 16px;
+  letter-spacing:1px; 
+  padding:5px 0; 
+  vertical-align: middle;
+}  
+
+.pay img.payImg{
+  width: 35px;
+  vertical-align: top;
+  object-position: center;
+  object-fit: cover;
+  padding: 0 3px;
+}
+.qty{
+  padding:5px 0; 
+}
+
+.qty > select {
+  text-align: center; }
+
+.btn_addCart {
+  width: 110px;
+  height: 40px;
+  color: #fff;
+  background-color: steelblue;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 2.4rem;
+  padding: 0px 10px;
+  text-align: center;
+  border: none;
+  cursor: pointer; }
+
+.aa {
+  position: relative;
+  padding-top: 10%; }
+  @media all and (max-width: 767px) {
+    .aa {
+      padding-top: 23px;
+      margin-bottom: 7%;
+      margin-top: 10px; } }
+  .aa .btn_addCart {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto; 
+    /*margin-right:30px; */
+    bottom: 0;
+    /*box-shadow: 1px 1px 1px black;*/
+  }
+  @media all and (max-width: 767px) {
+    .aa .btn_addCart {
+      bottom: -70%; } }
+
+
+
+.smallTitle {
+  background-color: rgba(110, 190, 142, 0.9);
+  height: 40px;
+  line-height: 30px;
+  border-radius: 5px;
+  margin:15px 0; 
+  font-size: 23px;
+  font-weight: 400;
+  letter-spacing: 10px;
+  color: #f1f1f1;
+  padding: 5px 8px;
+  text-shadow: 0px 0px 3px rgba(37, 44, 74, 0.6);
+  text-align: center;
+ /* z-index: 1;*/ } 
+  
+  /*.smallTitle span {
+    display: inline-block;
+    background: rgba(255,255,255,.6);
+    position: relative;
+    z-index: 3;
+    font-size:1.125rem;
+    font-weight: 500;
+    letter-spacing:0.25rem; 
+    color: #fff;
+    display: none; }*/
+  .smallTitle:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgba(110, 190, 142, 0.9);
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 50%;
+    display: none; }
+
+.second > div:nth-of-type(3) {
+  line-height: 28px;
+  width: 100%;
+  box-sizing: border-box;
+  padding:0 15px; 
+  margin: auto;
+  text-align: left; }
+
+.third p {
+  line-height: 28px; }
+
+.prodRecommend {
+  padding: 1% 2%; }
+
+
+
+  @media all and (min-width: 992px) {
+    .aa{padding-top:30%; }
+    .recommendItem .prodRecommend:nth-of-type(7){
+      display: none;}
+    .recommendItem .prodRecommend:nth-of-type(6){
+      display: none;} }
+
+    .recommendItem {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap; }
+
+    .recommendItem .prodRecommend .tagPS4 {
+      background-color: #0072BC; }
+    .recommendItem .prodRecommend .tagXBOX {
+      background-color: #7CC576; }
+    .recommendItem .prodRecommend .tagPC {
+      background-color: #A865A8; }
+    .recommendItem .prodRecommend .tagWii {
+      background-color: #DAAB10; }
+    .recommendItem .prodRecommend .tag3DS {
+      background-color: #C05459; }
+
+    .prodRecommend {
+      width: 23%;
+      box-sizing: border-box;
+      padding: 10px 1%;
+      text-align: center;
+      margin: 20px 0;
+      background-color: rgba(68, 130, 191, 0.2);
+      box-shadow: 0px 0px 3px rgba(42, 105, 83, 0.8);
+      cursor: pointer;
+      transition: 0.35s; }
+    @media all and (max-width: 767px) {
+      .prodRecommend {
+        width: 30%; }
+      .recommendItem div:nth-of-type(4) {
+        display: none; } }
+    .prodRecommend:hover {
+      box-shadow: 0px 0px 3px rgba(149, 33, 109, 0.8);
+      background-color: rgba(255, 167, 0, 0.2); }
+    .prodRecommend div:nth-of-type(1) {
+      width: 85%;
+      padding-top: 85%;
+      margin: auto;
+      position: relative;
+      overflow: hidden; }
+    .prodRecommend img {
+      position: absolute;
+      left: 0;top: 0;
+      display: block;
+      width: 100%;
+      object-fit: cover;
+      object-position: center; }
+  .prodRecommend .recommendGamePrice {
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: center; }
+  .prodRecommend div[class^="tag"] {
+    width: 60px;
+    margin: 5px auto;
+    color: #fff;
+    letter-spacing: 1px;
+    background-color: #80aab5;
+    font-size: 13px;
+    border-radius: 5px;
+    line-height: 1.5rem;
+    padding: 0px 6px;
+    text-align: center; }
+  .prodRecommend .recommendGameClass {
+    color: #555;
+    width: 74px;
+    margin: 5px auto;
+    font-size: 13px;
+    line-height: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #96CC58; }
+  .prodRecommend .recommendGameName {
+    font-size: 20px;
+    line-height: 1.5em;
+    text-align: center;
+    color: #2F4979; }  
+
+.commentInput {
+  margin-bottom: 5%; }
+  .commentInput .input {
+    border-width: 2px 2px 0 2px;
+    border-style: solid;
+    border-color: #A9A9A9;
+    padding-bottom: 10px; }
+    .commentInput .input .headBlock {
+      padding-left: 10px; }
+
+      @media all and (max-width: 768px){
+        .commentInput .input .headBlock {
+          display: none; }
+      }
+
+      .commentInput .input .headBlock .imgConstrain {
+        position: relative;
+        margin: auto;
+        padding-top: 100%;
+        overflow: hidden; }
+        .commentInput .input .headBlock .imgConstrain img {
+          position: absolute;
+          margin:10px; 
+          left: 0;
+          top: 0;
+          border-radius: 8px;
+          object-fit: cover;
+          object-position: center;
+          width: 100px;
+          height:100px; }
+        .commentInput .input .headBlock .imgConstrain .clearfix {
+          margin-top: 0; }
+      .commentInput .input .headBlock .userName {
+        text-align: center;
+        white-space: nowrap; }
+    .commentInput .input .inputBlock .commentTitle {
+      outline: none;
+      border: none;
+      display: block;
+      font-size: 18px;
+      line-height: 24px;
+      margin: 3% 0 0 5%;
+      width: 90%;
+      height: 38px; 
+      position: relative;
+      padding: 10px;
+      box-sizing: border-box;}
+  .commentInput .input .inputBlock{
+    position: relative;}
+  .commentInput .input .inputBlock:after {
+    content: '';
+    width: 90%;
+    height: 2px;
+    position: absolute;
+    left: 5%;top: 47%;
+    background-color: #ccc;}
+  @media all and (max-width: 991px) {
+    .commentInput .input .inputBlock:after {
+      top: 36%; } }
+    .commentInput .input .inputBlock .commentContent {
+      outline: none;
+      box-sizing: border-box;
+      border: none;
+      display: block;
+      font-size: 18px;
+      line-height: 24px;
+      margin: 3% 0 0 5%;
+      width: 90%;
+      height: 60px;
+      padding: 10px; }
+  .commentInput .evaluate {
+    background-color: rgba(124, 197, 118 ,.5);
+    border: 2px solid rgba(124, 197, 118 ,.5);
+    margin-top: 0; }
+    .commentInput .evaluate .star {
+      text-align: left;
+      padding: 12px;
+     /* padding-top:10px;*/
+    }
+    .commentInput .evaluate .sendComment {
+      text-align: right; 
+      padding: 1% 0;
+      padding-right: 3%;} 
+      #sendComment{
+        width: 70px;
+        height: 30px;
+        line-height: 31px;
+        background-color:steelblue;
+        color: #fff;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        border-radius:5px;
+        border:none; 
+        cursor: pointer; 
+      }
+      .commentInput .evaluate .sendComment button{
+        background-color: #fff;
+        color: #333;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.7rem;
+        padding: 0px 10px;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        box-shadow: 1px 1px 1px #000; }
+    .commentInput .evaluate .star {
+      /*margin-bottom: 10px*/; }
+    .commentInput .evaluate span {
+     padding:0 10px;
+     letter-spacing: 2px;}  
+      .commentInput .evaluate .star img {
+        cursor: pointer; }
+
+.commentType {
+  font-size: 0; }
+  .commentType button {
+    width: 20%;
+    padding: 5px 10px;
+    color: #666;
+    border: none;
+    border-radius: 5px 5px 0 0/ 5px 5px 0 0;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center; }
+  .commentType button + button {
+    margin-left: 1px; }
+  .commentType #commentType_all {
+    background-color: rgba(96, 184, 89 , .5); }  /*#60B859*/
+  .commentType #commentType_excellent {
+    background-color: rgba(62, 146, 204 ,.5); }
+  .commentType #commentType_soso {
+    background-color: rgba(59, 169, 156 , .5); }
+  .commentType #commentType_bad {
+    background-color: rgba(252, 158, 79 , .5); }
+
+.commentShow {
+  color: #666;
+  margin-top: 0; }
+  .commentShow > div:first-child {
+   /* margin-bottom: 0;*/ }
+  .commentShow > div {
+    margin-bottom: 10px; }
+    .commentShow > div:nth-of-type(1){
+      /*margin-bottom:0; */
+    }
+  .commentShow .headBlock {
+    padding-left: 20px;
+    margin-top: 10px; }
+    .commentShow .headBlock .imgConstrain {
+      position: relative;
+      padding-top: 100%;
+      overflow: hidden; }
+      .commentShow .headBlock .imgConstrain img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 8px;
+        object-fit: cover;
+        object-position: center;
+        width: 100px;
+        height:100px; }
+      .commentShow .headBlock .imgConstrain .clearfix {
+        margin-top: 0; }
+    .commentShow .headBlock .userName {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 5px;
+      margin-bottom: 5px; }
+  .commentShow .outputBlock .commentTitle {
+    outline: none;
+    border: none;
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 3% 0 0 5%;
+    width: 95%;
+    height: 30px; }
+  .commentShow .outputBlock .commentContent {
+    outline: none;
+    border: none;
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 3% 0 0 5%;
+    width: 95%;
+    line-height: 28px; }
+  .commentShow .evaluate {
+    padding-bottom: 20px; }
+    .commentShow .evaluate .star {
+      font-size: 15px;
+      text-align: left;
+      padding-left: 20px; }
+    .commentShow .evaluate .commentDate {
+      font-size: 15px;
+      padding-left: 3%; }
+      .commentShow .evaluate .commentDate span {
+        display: inline-block;
+        padding-bottom: 6px; }
+  .commentShow .excellent {
+    background-color: rgba(62, 146, 204,.5); }   /*#3E92CC*/
+  .commentShow .soso {
+    background-color: rgba(59, 169, 156,.5); }   /*#3BA99C*/
+  .commentShow .bad {
+    background-color:rgba(252, 158, 79,.5); }   /* #FC9E4F*/
+
+.footer {
+  padding: 4% 0;
+  background-color: #5E353C; }
+  @media all and (min-width: 970px) {
+   .smallPic{
+    float: right;
+    /*outline: 1px solid red;*/
+   }
+
+ 
+
+/*昌新增*/
+
+label[for="star01"],
+label[for="star02"],
+label[for="star03"],
+label[for="star04"],
+label[for="star05"]{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/star.png);
+  background-size: cover;
+  cursor: pointer;
+}
+input[type='radio']{
+  display: none;
+}
+#mesRates{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
